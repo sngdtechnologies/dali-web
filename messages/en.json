@@ -1,0 +1,10 @@
+{
+  "nav": {
+    "features": "Features",
+    "security": "Security",
+    "faq": "FAQ",
+    "about": "About",
+    "download": "Download"
+  },
+  "locale": { "switchTo": "Français", "label": "Language" }
+}

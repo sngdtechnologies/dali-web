@@ -1,0 +1,10 @@
+{
+  "nav": {
+    "features": "Fonctionnalités",
+    "security": "Sécurité",
+    "faq": "FAQ",
+    "about": "À propos",
+    "download": "Télécharger"
+  },
+  "locale": { "switchTo": "English", "label": "Langue" }
+}
