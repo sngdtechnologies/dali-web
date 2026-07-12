@@ -18,6 +18,24 @@
     }
   },
   "locale": { "switchTo": "Français", "label": "Language" },
+  "hero": {
+    "headline": "Your money, finally clear.",
+    "sub": "Dali brings all your accounts together, tracks your spending automatically, and advises you — even offline.",
+    "alt": "Preview of the Dali dashboard",
+    "scroll": "Scroll"
+  },
+  "showcase": {
+    "title": "Install Dali in one scan",
+    "sub": "Scan the code with your phone, or download from your store.",
+    "qrAlt": "QR code to download the Dali app",
+    "learnMore": "Learn more",
+    "benefits": {
+      "sms": { "title": "Automatic tracking", "body": "Your transactions captured and sorted, no manual entry." },
+      "ai": { "title": "AI assistant", "body": "Clear advice grounded in your real data." },
+      "score": { "title": "Dali-Score", "body": "Your financial health, from 0 to 1000." },
+      "sync": { "title": "Multi-account", "body": "All your accounts together and in sync." }
+    }
+  },
   "footer": {
     "tagline": "Your money, with clarity.",
     "colProduct": "Product",

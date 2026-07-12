@@ -18,6 +18,24 @@
     }
   },
   "locale": { "switchTo": "English", "label": "Langue" },
+  "hero": {
+    "headline": "Vos finances, enfin claires.",
+    "sub": "Dali réunit tous vos comptes, suit vos dépenses automatiquement et vous conseille — même hors ligne.",
+    "alt": "Aperçu du tableau de bord Dali",
+    "scroll": "Défiler"
+  },
+  "showcase": {
+    "title": "Installez Dali en un scan",
+    "sub": "Scannez le code avec votre téléphone, ou téléchargez depuis votre store.",
+    "qrAlt": "QR code de téléchargement de l'application Dali",
+    "learnMore": "En savoir plus",
+    "benefits": {
+      "sms": { "title": "Suivi automatique", "body": "Vos transactions captées et classées, sans saisie." },
+      "ai": { "title": "Assistant IA", "body": "Des conseils clairs, ancrés dans vos données réelles." },
+      "score": { "title": "Dali-Score", "body": "Votre santé financière, de 0 à 1000." },
+      "sync": { "title": "Multi-compte", "body": "Tous vos comptes réunis et synchronisés." }
+    }
+  },
   "footer": {
     "tagline": "Vos finances, en toute clarté.",
     "colProduct": "Produit",

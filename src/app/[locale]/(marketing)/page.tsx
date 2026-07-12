@@ -1,3 +1,11 @@
+import { Hero } from '@/components/marketing/Hero';
+import { AppShowcase } from '@/components/marketing/AppShowcase';
+
 export default function HomePage() {
-  return <main className="p-10">home</main>;
+  return (
+    <main>
+      <Hero />
+      <AppShowcase />
+    </main>
+  );
 }
