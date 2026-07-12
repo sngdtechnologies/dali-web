@@ -1,10 +1,37 @@
 {
   "nav": {
     "features": "Features",
+    "enterprise": "Business",
     "security": "Security",
     "faq": "FAQ",
     "about": "About",
-    "download": "Download"
+    "download": "Download",
+    "menu": {
+      "aggregation": "Multi-account aggregation",
+      "sms": "Automatic SMS tracking",
+      "ai": "AI assistant",
+      "score": "Dali-Score",
+      "budgets": "Budgets & goals",
+      "payments": "Payments",
+      "data": "Data & API",
+      "insights": "Insights"
+    }
   },
-  "locale": { "switchTo": "Français", "label": "Language" }
+  "locale": { "switchTo": "Français", "label": "Language" },
+  "footer": {
+    "tagline": "Your money, with clarity.",
+    "colProduct": "Product",
+    "colResources": "Resources",
+    "colCompany": "Company",
+    "colLegal": "Legal",
+    "features": "Features",
+    "security": "Security",
+    "faq": "FAQ",
+    "about": "About",
+    "enterprise": "Business",
+    "terms": "Terms of use",
+    "privacy": "Privacy policy",
+    "cookies": "Cookies",
+    "rights": "All rights reserved."
+  }
 }

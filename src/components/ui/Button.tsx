@@ -23,6 +23,9 @@ export function Button({
   if (href && /^https?:\/\//.test(href)) {
     return <a href={href} className={classes} target="_blank" rel="noreferrer">{children}</a>;
   }
+  if (href && /^(#|mailto:|tel:)/.test(href)) {
+    return <a href={href} className={classes}>{children}</a>;
+  }
   if (href) {
     return <Link href={href} className={classes}>{children}</Link>;
   }

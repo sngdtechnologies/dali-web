@@ -1,10 +1,37 @@
 {
   "nav": {
     "features": "Fonctionnalités",
+    "enterprise": "Entreprises",
     "security": "Sécurité",
     "faq": "FAQ",
     "about": "À propos",
-    "download": "Télécharger"
+    "download": "Télécharger",
+    "menu": {
+      "aggregation": "Agrégation multi-compte",
+      "sms": "Suivi automatique SMS",
+      "ai": "Assistant IA",
+      "score": "Dali-Score",
+      "budgets": "Budgets & objectifs",
+      "payments": "Paiements",
+      "data": "Données & API",
+      "insights": "Insights"
+    }
   },
-  "locale": { "switchTo": "English", "label": "Langue" }
+  "locale": { "switchTo": "English", "label": "Langue" },
+  "footer": {
+    "tagline": "Vos finances, en toute clarté.",
+    "colProduct": "Produit",
+    "colResources": "Ressources",
+    "colCompany": "Entreprise",
+    "colLegal": "Légal",
+    "features": "Fonctionnalités",
+    "security": "Sécurité",
+    "faq": "FAQ",
+    "about": "À propos",
+    "enterprise": "Entreprises",
+    "terms": "Conditions d'utilisation",
+    "privacy": "Politique de confidentialité",
+    "cookies": "Cookies",
+    "rights": "Tous droits réservés."
+  }
 }
