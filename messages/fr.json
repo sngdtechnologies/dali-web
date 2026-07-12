@@ -115,6 +115,12 @@
       "soon": "Bientôt"
     }
   },
+  "meta": {
+    "homeTitle": "Dali — Vos finances, enfin claires",
+    "homeDesc": "Agrégation multi-compte, suivi automatique, conseils IA et contrôle total de votre argent, même hors ligne.",
+    "faqTitle": "FAQ — Dali",
+    "faqDesc": "Questions fréquentes sur Dali."
+  },
   "legal": {
     "notice": "Document provisoire — à faire valider par un juriste avant mise en production.",
     "conditions": { "title": "Conditions d'utilisation", "body": "En utilisant Dali, vous acceptez les présentes conditions d'utilisation. Ce texte provisoire décrit l'accès au service, les responsabilités des utilisateurs et les limitations de responsabilité. Il sera remplacé par la version définitive validée juridiquement." },

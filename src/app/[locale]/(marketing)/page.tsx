@@ -1,5 +1,14 @@
+import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
+import { buildMetadata } from '@/lib/seo';
 import { Hero } from '@/components/marketing/Hero';
 import { AppShowcase } from '@/components/marketing/AppShowcase';
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'meta' });
+  return buildMetadata({ locale, path: '/', title: t('homeTitle'), description: t('homeDesc') });
+}
 import { TrustBadges } from '@/components/marketing/TrustBadges';
 import { FeatureBlock } from '@/components/marketing/FeatureBlock';
 import { AiBlock } from '@/components/marketing/AiBlock';

@@ -115,6 +115,12 @@
       "soon": "Coming soon"
     }
   },
+  "meta": {
+    "homeTitle": "Dali — Your money, finally clear",
+    "homeDesc": "Multi-account aggregation, automatic tracking, AI advice, and full control of your money, even offline.",
+    "faqTitle": "FAQ — Dali",
+    "faqDesc": "Frequently asked questions about Dali."
+  },
   "legal": {
     "notice": "Draft document — to be reviewed by a lawyer before production.",
     "conditions": { "title": "Terms of use", "body": "By using Dali, you accept these terms of use. This draft describes service access, user responsibilities, and liability limitations. It will be replaced by the legally reviewed final version." },
