@@ -61,6 +61,43 @@
     "professionals": { "title": "Professionnels", "body": "Séparez pro et perso, suivez vos flux et anticipez vos échéances." },
     "ecommerce": { "title": "E-commerçants", "body": "Gardez un œil sur vos encaissements et la santé financière de votre activité." }
   },
+  "b2b": {
+    "eyebrow": "Bientôt",
+    "title": "Dali pour les entreprises",
+    "sub": "Des solutions financières pour les professionnels et les institutions — bientôt disponibles.",
+    "seeAll": "Découvrir les solutions",
+    "items": {
+      "payments": { "title": "Paiements", "body": "Encaissements et virements simplifiés par open banking." },
+      "data": { "title": "Données & API", "body": "Agrégation bancaire et API pour vos produits financiers." },
+      "insights": { "title": "Insights", "body": "Analyse en temps réel de vos flux financiers." }
+    }
+  },
+  "security": {
+    "title": "Vos données vous appartiennent",
+    "body": "Chiffrement, fonctionnement hors ligne et souveraineté totale sur vos informations financières.",
+    "cta": "En savoir plus"
+  },
+  "free": {
+    "title": "Gratuit pour commencer",
+    "body": "Téléchargez Dali et prenez le contrôle de vos finances, sans frais."
+  },
+  "cta": {
+    "title": "Prêt à y voir clair ?",
+    "body": "Rejoignez les utilisateurs de Dali dès aujourd'hui."
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "subtitle": "Tout ce que vous devez savoir sur Dali.",
+    "seeAll": "Voir toutes les questions",
+    "items": {
+      "cost": { "q": "Dali est-il gratuit ?", "a": "Oui, Dali est gratuit pour commencer et suivre vos finances." },
+      "offline": { "q": "Puis-je utiliser Dali hors ligne ?", "a": "Oui. Dali est conçu offline-first : tout fonctionne sans connexion et se synchronise ensuite." },
+      "sms": { "q": "Comment fonctionne le suivi automatique ?", "a": "Dali lit les SMS de transaction de votre banque pour catégoriser vos dépenses automatiquement." },
+      "privacy": { "q": "Mes données sont-elles en sécurité ?", "a": "Vos données sont chiffrées et vous en gardez le contrôle total." },
+      "score": { "q": "Qu'est-ce que le Dali-Score ?", "a": "Un score de 0 à 1000 qui résume votre santé financière." },
+      "accounts": { "q": "Puis-je connecter plusieurs comptes ?", "a": "Oui, réunissez tous vos comptes et suivez-les au même endroit." }
+    }
+  },
   "footer": {
     "tagline": "Vos finances, en toute clarté.",
     "colProduct": "Produit",

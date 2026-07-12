@@ -61,6 +61,43 @@
     "professionals": { "title": "Professionals", "body": "Separate business and personal, track your flows, and anticipate due dates." },
     "ecommerce": { "title": "E-merchants", "body": "Keep an eye on your income and the financial health of your business." }
   },
+  "b2b": {
+    "eyebrow": "Coming soon",
+    "title": "Dali for business",
+    "sub": "Financial solutions for professionals and institutions — coming soon.",
+    "seeAll": "Explore the solutions",
+    "items": {
+      "payments": { "title": "Payments", "body": "Simplified open-banking collections and transfers." },
+      "data": { "title": "Data & API", "body": "Bank aggregation and APIs for your financial products." },
+      "insights": { "title": "Insights", "body": "Real-time analysis of your financial flows." }
+    }
+  },
+  "security": {
+    "title": "Your data belongs to you",
+    "body": "Encryption, offline operation, and full sovereignty over your financial information.",
+    "cta": "Learn more"
+  },
+  "free": {
+    "title": "Free to start",
+    "body": "Download Dali and take control of your finances, at no cost."
+  },
+  "cta": {
+    "title": "Ready to see clearly?",
+    "body": "Join Dali users today."
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "subtitle": "Everything you need to know about Dali.",
+    "seeAll": "See all questions",
+    "items": {
+      "cost": { "q": "Is Dali free?", "a": "Yes, Dali is free to start and track your finances." },
+      "offline": { "q": "Can I use Dali offline?", "a": "Yes. Dali is offline-first: everything works without a connection and syncs afterwards." },
+      "sms": { "q": "How does automatic tracking work?", "a": "Dali reads your bank's transaction SMS to categorize your spending automatically." },
+      "privacy": { "q": "Is my data safe?", "a": "Your data is encrypted and you keep full control of it." },
+      "score": { "q": "What is the Dali-Score?", "a": "A 0–1000 score summarizing your financial health." },
+      "accounts": { "q": "Can I connect several accounts?", "a": "Yes, bring all your accounts together and track them in one place." }
+    }
+  },
   "footer": {
     "tagline": "Your money, with clarity.",
     "colProduct": "Product",
