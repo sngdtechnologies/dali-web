@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dali Web
 
-## Getting Started
+Unified Next.js app: the public marketing vitrine (this spec) plus a future backoffice.
+Linxo-inspired structure in Dali's own brand palette (ivoire / forêt / gold), bilingual FR (default) / EN.
 
-First, run the development server:
+## Develop
 
-```bash
+```
+npm install
+cp .env.example .env.local
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+FR default at `/fr`, English at `/en`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Quality gates
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm test` — Vitest unit/component tests
+- `npm run e2e` — Playwright end-to-end + axe accessibility (requires `npx playwright install`)
+- `npm run lint` / `npm run typecheck`
 
-## Learn More
+## Build & run
 
-To learn more about Next.js, take a look at the following resources:
+```
+npm run build && npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Docker
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+docker build -t dali-web .
+docker run -p 3000:3000 -e NEXT_PUBLIC_API_URL=... dali-web
+```
 
-## Deploy on Vercel
+## Notes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Design tokens are ported from `dali-mobile/lib/theme/dali_theme.dart` (kept visually identical to the app).
+- Motion via Framer Motion + Lenis; every animation honors `prefers-reduced-motion`.
+- Fonts (Instrument Serif + Inter) are self-hosted at build time via `next/font` (no runtime font CDN).
+- The backoffice (NestJS-native admin auth + admin CRUD) is a separate spec; the API/auth seams live in `src/lib/api` and `src/lib/auth`.
+- Placeholder assets to swap later: store badges (official App Store / Google Play badges), the device-mockup screenshot, and `public/og.png`.
