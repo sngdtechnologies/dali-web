@@ -49,6 +49,18 @@
     "score": { "title": "Votre Dali-Score", "body": "Un score de 0 à 1000 qui résume votre santé financière et progresse avec vos bonnes habitudes." },
     "budgets": { "title": "Budgets et objectifs", "body": "Fixez des budgets, suivez vos objectifs d'épargne et visualisez vos progrès en un coup d'œil." }
   },
+  "personas": {
+    "title": "Dali s'adapte à vous",
+    "sub": "Quel que soit votre profil, Dali éclaire vos finances.",
+    "cta": "Découvrir",
+    "prev": "Profil précédent",
+    "next": "Profil suivant",
+    "individuals": { "title": "Particuliers", "body": "Suivez vos dépenses au quotidien et gardez le contrôle de votre budget sans effort." },
+    "students": { "title": "Étudiants", "body": "Un budget serré ? Dali vous aide à suivre chaque franc et à éviter les mauvaises surprises." },
+    "families": { "title": "Familles", "body": "Réunissez les comptes du foyer et pilotez les dépenses communes en toute clarté." },
+    "professionals": { "title": "Professionnels", "body": "Séparez pro et perso, suivez vos flux et anticipez vos échéances." },
+    "ecommerce": { "title": "E-commerçants", "body": "Gardez un œil sur vos encaissements et la santé financière de votre activité." }
+  },
   "footer": {
     "tagline": "Vos finances, en toute clarté.",
     "colProduct": "Produit",

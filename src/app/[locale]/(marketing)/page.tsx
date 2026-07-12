@@ -3,6 +3,7 @@ import { AppShowcase } from '@/components/marketing/AppShowcase';
 import { TrustBadges } from '@/components/marketing/TrustBadges';
 import { FeatureBlock } from '@/components/marketing/FeatureBlock';
 import { AiBlock } from '@/components/marketing/AiBlock';
+import { PersonaCarousel } from '@/components/marketing/PersonaCarousel';
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
       <AiBlock />
       <FeatureBlock featureKey="score" side="left" />
       <FeatureBlock featureKey="budgets" side="right" />
+      <PersonaCarousel />
     </main>
   );
 }

@@ -49,6 +49,18 @@
     "score": { "title": "Your Dali-Score", "body": "A 0–1000 score that sums up your financial health and grows with good habits." },
     "budgets": { "title": "Budgets and goals", "body": "Set budgets, track savings goals, and see your progress at a glance." }
   },
+  "personas": {
+    "title": "Dali adapts to you",
+    "sub": "Whatever your profile, Dali brings clarity to your money.",
+    "cta": "Discover",
+    "prev": "Previous profile",
+    "next": "Next profile",
+    "individuals": { "title": "Individuals", "body": "Track your day-to-day spending and stay in control of your budget effortlessly." },
+    "students": { "title": "Students", "body": "Tight budget? Dali helps you track every cent and avoid nasty surprises." },
+    "families": { "title": "Families", "body": "Bring the household's accounts together and manage shared spending with clarity." },
+    "professionals": { "title": "Professionals", "body": "Separate business and personal, track your flows, and anticipate due dates." },
+    "ecommerce": { "title": "E-merchants", "body": "Keep an eye on your income and the financial health of your business." }
+  },
   "footer": {
     "tagline": "Your money, with clarity.",
     "colProduct": "Product",
