@@ -98,6 +98,29 @@
       "accounts": { "q": "Puis-je connecter plusieurs comptes ?", "a": "Oui, réunissez tous vos comptes et suivez-les au même endroit." }
     }
   },
+  "pages": {
+    "features": { "title": "Tout ce que Dali fait pour vous", "body": "Un aperçu complet des fonctionnalités qui vous aident à maîtriser votre argent." },
+    "security": {
+      "title": "Sécurité et confidentialité",
+      "body": "Comment Dali protège vos données financières.",
+      "s1title": "Chiffrement", "s1body": "Vos données sensibles sont chiffrées de bout en bout.",
+      "s2title": "Hors ligne d'abord", "s2body": "Dali fonctionne sans connexion ; vos données restent sur votre appareil et se synchronisent quand vous le décidez.",
+      "s3title": "Souveraineté", "s3body": "Vous gardez le contrôle total : exportez ou supprimez vos données à tout moment."
+    },
+    "about": { "title": "Notre mission", "body": "Rendre la clarté financière accessible à tous. Dali est né de la conviction que gérer son argent doit être simple, intelligent et respectueux de la vie privée." },
+    "enterprise": {
+      "title": "Dali pour les entreprises",
+      "body": "Des solutions financières pour les professionnels et les institutions. Ces offres arrivent bientôt — contactez-nous pour en savoir plus.",
+      "contact": "Nous contacter",
+      "soon": "Bientôt"
+    }
+  },
+  "legal": {
+    "notice": "Document provisoire — à faire valider par un juriste avant mise en production.",
+    "conditions": { "title": "Conditions d'utilisation", "body": "En utilisant Dali, vous acceptez les présentes conditions d'utilisation. Ce texte provisoire décrit l'accès au service, les responsabilités des utilisateurs et les limitations de responsabilité. Il sera remplacé par la version définitive validée juridiquement." },
+    "confidentialite": { "title": "Politique de confidentialité", "body": "Dali respecte votre vie privée. Ce texte provisoire décrit les données collectées, leur usage, leur conservation et vos droits. Vos données financières sont chiffrées et vous en gardez le contrôle. La version définitive sera validée juridiquement." },
+    "cookies": { "title": "Politique de cookies", "body": "Ce site utilise un minimum de cookies nécessaires à son fonctionnement. Ce texte provisoire décrit les cookies utilisés et la manière de les gérer. La version définitive sera validée juridiquement." }
+  },
   "footer": {
     "tagline": "Vos finances, en toute clarté.",
     "colProduct": "Produit",

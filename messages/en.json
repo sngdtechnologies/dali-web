@@ -98,6 +98,29 @@
       "accounts": { "q": "Can I connect several accounts?", "a": "Yes, bring all your accounts together and track them in one place." }
     }
   },
+  "pages": {
+    "features": { "title": "Everything Dali does for you", "body": "A full overview of the features that help you master your money." },
+    "security": {
+      "title": "Security & privacy",
+      "body": "How Dali protects your financial data.",
+      "s1title": "Encryption", "s1body": "Your sensitive data is encrypted end to end.",
+      "s2title": "Offline first", "s2body": "Dali works without a connection; your data stays on your device and syncs when you choose.",
+      "s3title": "Sovereignty", "s3body": "You keep full control: export or delete your data anytime."
+    },
+    "about": { "title": "Our mission", "body": "Make financial clarity accessible to everyone. Dali was born from the belief that managing money should be simple, smart, and privacy-respecting." },
+    "enterprise": {
+      "title": "Dali for business",
+      "body": "Financial solutions for professionals and institutions. These offerings are coming soon — get in touch to learn more.",
+      "contact": "Contact us",
+      "soon": "Coming soon"
+    }
+  },
+  "legal": {
+    "notice": "Draft document — to be reviewed by a lawyer before production.",
+    "conditions": { "title": "Terms of use", "body": "By using Dali, you accept these terms of use. This draft describes service access, user responsibilities, and liability limitations. It will be replaced by the legally reviewed final version." },
+    "confidentialite": { "title": "Privacy policy", "body": "Dali respects your privacy. This draft describes the data collected, its use, retention, and your rights. Your financial data is encrypted and you keep control of it. The final version will be legally reviewed." },
+    "cookies": { "title": "Cookie policy", "body": "This site uses a minimum of cookies necessary for it to function. This draft describes the cookies used and how to manage them. The final version will be legally reviewed." }
+  },
   "footer": {
     "tagline": "Your money, with clarity.",
     "colProduct": "Product",
