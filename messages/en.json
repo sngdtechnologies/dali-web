@@ -36,6 +36,19 @@
       "sync": { "title": "Multi-account", "body": "All your accounts together and in sync." }
     }
   },
+  "trust": {
+    "offline": "Works offline",
+    "encrypted": "Encrypted data",
+    "sms": "Automatic SMS tracking",
+    "banks": "Local banks supported"
+  },
+  "features": {
+    "aggregation": { "title": "All your accounts, together", "body": "Bring every account into one place, whatever your bank, and keep a clear overview." },
+    "sms": { "title": "Automatic SMS tracking", "body": "Every transaction is captured and categorized automatically — no manual entry at all." },
+    "ai": { "eyebrow": "Dali Assistant", "title": "A financial advisor in your pocket", "body": "Ask questions and get clear, personalized advice grounded in your real data.", "sample": "You spent 32% less on dining this month. Keep it up!" },
+    "score": { "title": "Your Dali-Score", "body": "A 0–1000 score that sums up your financial health and grows with good habits." },
+    "budgets": { "title": "Budgets and goals", "body": "Set budgets, track savings goals, and see your progress at a glance." }
+  },
   "footer": {
     "tagline": "Your money, with clarity.",
     "colProduct": "Product",

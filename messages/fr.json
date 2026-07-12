@@ -36,6 +36,19 @@
       "sync": { "title": "Multi-compte", "body": "Tous vos comptes réunis et synchronisés." }
     }
   },
+  "trust": {
+    "offline": "Fonctionne hors ligne",
+    "encrypted": "Données chiffrées",
+    "sms": "Suivi automatique SMS",
+    "banks": "Banques locales supportées"
+  },
+  "features": {
+    "aggregation": { "title": "Tous vos comptes, réunis", "body": "Centralisez chaque compte au même endroit, quelle que soit votre banque, et gardez une vue d'ensemble claire." },
+    "sms": { "title": "Suivi automatique par SMS", "body": "Chaque transaction est captée et catégorisée automatiquement, sans la moindre saisie manuelle." },
+    "ai": { "eyebrow": "Assistant Dali", "title": "Un conseiller financier dans votre poche", "body": "Posez vos questions et obtenez des conseils clairs et personnalisés, ancrés dans vos données réelles.", "sample": "Tu as dépensé 32 % de moins en restaurants ce mois-ci. Continue comme ça !" },
+    "score": { "title": "Votre Dali-Score", "body": "Un score de 0 à 1000 qui résume votre santé financière et progresse avec vos bonnes habitudes." },
+    "budgets": { "title": "Budgets et objectifs", "body": "Fixez des budgets, suivez vos objectifs d'épargne et visualisez vos progrès en un coup d'œil." }
+  },
   "footer": {
     "tagline": "Vos finances, en toute clarté.",
     "colProduct": "Produit",
