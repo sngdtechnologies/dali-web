@@ -1,20 +1,56 @@
 {
   "nav": {
-    "features": "Features",
-    "enterprise": "Business",
-    "security": "Security",
-    "faq": "FAQ",
+    "solutions": "Solutions",
+    "usecases": "Use cases",
+    "resources": "Resources",
     "about": "About",
-    "download": "Download",
-    "menu": {
-      "aggregation": "Multi-account aggregation",
-      "sms": "Automatic SMS tracking",
-      "ai": "AI assistant",
-      "score": "Dali-Score",
-      "budgets": "Budgets & goals",
-      "payments": "Payments",
-      "data": "Data & API",
-      "insights": "Insights"
+    "contact": "Contact us",
+    "mega": {
+      "solutions": {
+        "app": {
+          "title": "Dali app", "tagline": "Your best financial decisions, every day",
+          "i1": { "label": "The Dali app", "desc": "Automatic tracking of your accounts and spending" },
+          "i2": { "label": "AI assistant", "desc": "A financial advisor in your pocket" },
+          "i3": { "label": "Dali-Score", "desc": "Your financial health, from 0 to 1000" }
+        },
+        "payments": {
+          "title": "Payments", "tagline": "Optimize your payments, accelerate growth",
+          "i1": { "label": "Simplified transfer", "desc": "Secure bank-transfer payment in a few clicks" },
+          "i2": { "label": "Payment scheduling", "desc": "Flexible, hassle-free payments" }
+        },
+        "data": {
+          "title": "Data & API", "tagline": "Bring intelligence to your financial data",
+          "i1": { "label": "Accounts", "desc": "100% secure account access" },
+          "i2": { "label": "Wealth", "desc": "Your wealth data, enriched" },
+          "i3": { "label": "Insights", "desc": "Your financial data, enriched" }
+        },
+        "observatory": {
+          "title": "Observatory", "tagline": "Anticipate customer trends and expectations",
+          "i1": { "label": "Our studies", "desc": "Financial behavior trends" }
+        }
+      },
+      "usecases": {
+        "i1": { "label": "Budget management", "desc": "Centralized tracking of your finances" },
+        "i2": { "label": "Multi-account aggregation", "desc": "All your accounts in one place" },
+        "i3": { "label": "Automatic tracking", "desc": "Your transactions captured via SMS" },
+        "i4": { "label": "Savings & goals", "desc": "Reach your financial goals" },
+        "i5": { "label": "QR code payment", "desc": "Pay and get paid with a scan" },
+        "i6": { "label": "E-commerce", "desc": "Simplified collections" },
+        "promo": { "title": "Dali live", "desc": "30 minutes to discover Dali. Ask us anything!", "badge": "Free" }
+      },
+      "resources": {
+        "i1": { "label": "Security", "desc": "How Dali protects your data" },
+        "i2": { "label": "FAQ", "desc": "Answers to your questions" },
+        "i3": { "label": "Blog", "desc": "News and financial tips" },
+        "i4": { "label": "Help center", "desc": "Need a hand?" }
+      },
+      "about": {
+        "i1": { "label": "About us", "desc": "At the heart of financial innovation" },
+        "i2": { "label": "Join us", "desc": "Join those shaping the future of finance" },
+        "i3": { "label": "They trust us", "desc": "A few of our references" },
+        "i4": { "label": "Events", "desc": "Meet our team" },
+        "promo": { "title": "Insights", "desc": "Offer a clarified view of transactions", "badge": "Soon" }
+      }
     }
   },
   "locale": { "switchTo": "Français", "label": "Language" },

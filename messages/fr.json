@@ -1,20 +1,56 @@
 {
   "nav": {
-    "features": "Fonctionnalités",
-    "enterprise": "Entreprises",
-    "security": "Sécurité",
-    "faq": "FAQ",
+    "solutions": "Nos solutions",
+    "usecases": "Cas d'usages",
+    "resources": "Ressources",
     "about": "À propos",
-    "download": "Télécharger",
-    "menu": {
-      "aggregation": "Agrégation multi-compte",
-      "sms": "Suivi automatique SMS",
-      "ai": "Assistant IA",
-      "score": "Dali-Score",
-      "budgets": "Budgets & objectifs",
-      "payments": "Paiements",
-      "data": "Données & API",
-      "insights": "Insights"
+    "contact": "Contactez-nous",
+    "mega": {
+      "solutions": {
+        "app": {
+          "title": "Application Dali", "tagline": "Vos meilleures décisions financières, chaque jour",
+          "i1": { "label": "L'app Dali", "desc": "Le suivi automatique de vos comptes et dépenses" },
+          "i2": { "label": "Assistant IA", "desc": "Un conseiller financier dans votre poche" },
+          "i3": { "label": "Dali-Score", "desc": "Votre santé financière, de 0 à 1000" }
+        },
+        "payments": {
+          "title": "Paiements", "tagline": "Optimisez vos paiements, accélérez votre croissance",
+          "i1": { "label": "Virement simplifié", "desc": "Le paiement par virement sécurisé en quelques clics" },
+          "i2": { "label": "Échéancier de paiement", "desc": "Le paiement flexible et sans contrainte" }
+        },
+        "data": {
+          "title": "Données & API", "tagline": "Donnez de l'intelligence à vos données financières",
+          "i1": { "label": "Comptes", "desc": "L'accès aux comptes 100% sécurisé" },
+          "i2": { "label": "Patrimoine", "desc": "Vos données patrimoniales valorisées" },
+          "i3": { "label": "Insights", "desc": "Vos données financières enrichies" }
+        },
+        "observatory": {
+          "title": "Observatoire", "tagline": "Anticipez les tendances et attentes des clients",
+          "i1": { "label": "Nos études", "desc": "Les tendances de comportements financiers" }
+        }
+      },
+      "usecases": {
+        "i1": { "label": "Gestion de budget", "desc": "Un suivi centralisé de vos finances" },
+        "i2": { "label": "Agrégation multi-compte", "desc": "Tous vos comptes réunis au même endroit" },
+        "i3": { "label": "Suivi automatique", "desc": "Vos transactions captées par SMS" },
+        "i4": { "label": "Épargne & objectifs", "desc": "Atteignez vos objectifs financiers" },
+        "i5": { "label": "Paiement par QR code", "desc": "Payer et encaisser en un scan" },
+        "i6": { "label": "E-commerce", "desc": "Des encaissements simplifiés" },
+        "promo": { "title": "Dali en direct", "desc": "30 min chrono pour découvrir Dali. Posez-nous toutes vos questions !", "badge": "Gratuit" }
+      },
+      "resources": {
+        "i1": { "label": "Sécurité", "desc": "Comment Dali protège vos données" },
+        "i2": { "label": "FAQ", "desc": "Les réponses à vos questions" },
+        "i3": { "label": "Blog", "desc": "Actualités et conseils financiers" },
+        "i4": { "label": "Centre d'aide", "desc": "Besoin d'un coup de main ?" }
+      },
+      "about": {
+        "i1": { "label": "Qui sommes-nous", "desc": "Au cœur de l'innovation financière" },
+        "i2": { "label": "Nous rejoindre", "desc": "Rejoignez celles et ceux qui font bouger la finance" },
+        "i3": { "label": "Ils nous font confiance", "desc": "Quelques-unes de nos références" },
+        "i4": { "label": "Événements", "desc": "Rencontrez notre équipe" },
+        "promo": { "title": "Insights", "desc": "Offrez une vue clarifiée de vos transactions", "badge": "Bientôt" }
+      }
     }
   },
   "locale": { "switchTo": "English", "label": "Langue" },
