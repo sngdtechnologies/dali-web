@@ -32,7 +32,9 @@ export function Hero() {
     <section className="relative bg-white pb-24 pt-6">
       <Container>
         <div className="grid gap-5 lg:grid-cols-[1.7fr_1fr]">
-          <div className="relative overflow-hidden rounded-dali-xl bg-gradient-to-br from-foret-700 to-foret-900 p-8 text-ivoire md:p-12">
+          <div className="relative min-h-[440px] overflow-hidden rounded-dali-xl p-8 text-ivoire md:p-12">
+            <Image src="/hero.webp" alt="" fill priority sizes="(max-width: 1024px) 100vw, 62vw" className="object-cover object-center" />
+            <div className="absolute inset-0 bg-gradient-to-tr from-foret-900/95 via-foret-900/65 to-foret-800/25" />
             <FloatingDashboard />
             <div className="relative max-w-xl pt-44 sm:pt-28 md:pt-36">
               <Reveal>
@@ -55,7 +57,7 @@ export function Hero() {
                 {t('appCard.cta')} <Arrow />
               </a>
               <div className="pointer-events-none absolute -bottom-8 -right-4 w-32 rotate-3">
-                <Image src="/screens/comptes.webp" alt="" width={128} height={268} className="rounded-[20px] shadow-2xl" />
+                <Image src="/screens/comptes.webp" alt="" width={128} height={268} unoptimized className="rounded-[16px] shadow-2xl [image-rendering:pixelated]" />
               </div>
             </div>
             <div className="flex flex-1 flex-col justify-between rounded-dali-xl bg-foret-100 p-6 text-encre">

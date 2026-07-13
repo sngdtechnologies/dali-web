@@ -48,8 +48,9 @@ export async function AppShowcase() {
                     src={`/screens/${c.img}.webp`}
                     alt=""
                     fill
+                    unoptimized
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 380px"
-                    className="object-cover object-top"
+                    className="object-cover object-top [image-rendering:pixelated]"
                   />
                 </div>
                 <div className="p-5">
