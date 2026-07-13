@@ -44,8 +44,9 @@ export function Header({ locale }: { locale: 'fr' | 'en' }) {
     <header className={cn('sticky top-0 z-50 transition-all duration-300', scrolled || open ? 'bg-white/95 shadow-sm backdrop-blur' : 'bg-white')}>
       <div ref={ref} onMouseLeave={() => setOpen(null)}>
         <Container className={cn('flex items-center justify-between transition-all duration-300', scrolled ? 'py-3' : 'py-4')}>
-          <Link href="/" className="flex items-center gap-2 font-serif text-2xl font-bold" onFocus={() => setOpen(null)}>
-            <span aria-hidden className="text-foret-600">◈</span> Dali
+          <Link href="/" className="flex items-center" aria-label="Dali" onFocus={() => setOpen(null)}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/logo.svg" alt="Dali" className="h-9 w-auto" />
           </Link>
           <nav className="hidden items-center gap-1 md:flex">
             {menus.map((menu) => (

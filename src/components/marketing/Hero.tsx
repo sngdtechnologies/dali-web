@@ -2,9 +2,9 @@ import { useTranslations } from 'next-intl';
 import { Container } from '@/components/ui/Container';
 import { Reveal } from '@/components/motion/Reveal';
 import { Link } from '@/i18n/routing';
+import Image from 'next/image';
 import { StoreBadges } from './StoreBadges';
 import { ScrollIndicator } from './ScrollIndicator';
-import { PhoneArt } from './PhoneArt';
 
 function Arrow() {
   return (
@@ -54,8 +54,8 @@ export function Hero() {
               <a href="#download" className="relative z-10 mt-6 inline-flex w-fit items-center gap-2 text-sm font-medium text-or-300 hover:gap-3">
                 {t('appCard.cta')} <Arrow />
               </a>
-              <div className="pointer-events-none absolute -bottom-10 -right-5 opacity-90">
-                <PhoneArt variant="accounts" />
+              <div className="pointer-events-none absolute -bottom-8 -right-4 w-32 rotate-3">
+                <Image src="/screens/comptes.webp" alt="" width={128} height={268} className="rounded-[20px] shadow-2xl" />
               </div>
             </div>
             <div className="flex flex-1 flex-col justify-between rounded-dali-xl bg-foret-100 p-6 text-encre">

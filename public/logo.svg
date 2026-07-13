@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="160" viewBox="0 0 440 160">
+<g transform="translate(20,44)">
+  <path d="M8 44 A28 28 0 0 1 44 8" fill="none" stroke="#1F3A2E" stroke-width="7" stroke-linecap="round"></path>
+  <path d="M28 64 A28 28 0 0 1 64 28" fill="none" stroke="#C9A961" stroke-width="7" stroke-linecap="round"></path>
+</g>
+<text x="112" y="108" font-family="&#39;Instrument Serif&#39;, Georgia, serif" font-style="italic" font-size="72" fill="#1F3A2E">Dali</text>
+</svg>

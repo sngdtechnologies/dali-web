@@ -63,9 +63,8 @@ export function Footer() {
       <Container>
         <div className="grid gap-12 lg:grid-cols-[1.4fr_repeat(4,1fr)]">
           <div>
-            <p className="flex items-center gap-2 font-serif text-2xl font-bold">
-              <span aria-hidden className="text-foret-300">◈</span> Dali
-            </p>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/logo-light.svg" alt="Dali" className="h-9 w-auto" />
             <p className="mt-4 max-w-xs text-sm text-ivoire/70">{t('description')}</p>
             <div className="mt-6 flex gap-3">
               {SOCIALS.map((s) => (
