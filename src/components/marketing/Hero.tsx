@@ -57,7 +57,7 @@ export function Hero() {
                 {t('appCard.cta')} <Arrow />
               </a>
               <div className="pointer-events-none absolute -bottom-8 -right-4 w-32 rotate-3">
-                <Image src="/screens/comptes.webp" alt="" width={128} height={268} unoptimized className="rounded-[16px] shadow-2xl [image-rendering:pixelated]" />
+                <Image src="/screens/comptes.webp" alt="" width={128} height={276} className="rounded-[16px] shadow-2xl" />
               </div>
             </div>
             <div className="flex flex-1 flex-col justify-between rounded-dali-xl bg-foret-100 p-6 text-encre">
