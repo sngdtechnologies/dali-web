@@ -45,7 +45,7 @@ export function Carousel({
           }}
         >
           {items.map((it, i) => (
-            <div key={i} className="w-full shrink-0 px-2" aria-hidden={i !== index}>
+            <div key={i} className="w-full shrink-0 px-2" inert={i !== index}>
               {it}
             </div>
           ))}

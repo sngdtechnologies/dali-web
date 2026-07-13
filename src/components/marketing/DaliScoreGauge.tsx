@@ -27,7 +27,7 @@ export function DaliScoreGauge({ score }: { score: number }) {
       <div className="-mt-8 font-serif text-5xl">
         <CountUp to={score} />
       </div>
-      <div className="text-sm text-sable-500">/ 1000</div>
+      <div className="text-sm text-sable-700">/ 1000</div>
     </div>
   );
 }

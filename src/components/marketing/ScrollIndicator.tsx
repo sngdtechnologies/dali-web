@@ -4,7 +4,7 @@ import { motion, useReducedMotion } from 'framer-motion';
 export function ScrollIndicator({ label }: { label: string }) {
   const reduce = useReducedMotion();
   return (
-    <div className="pointer-events-none absolute inset-x-0 bottom-6 flex flex-col items-center gap-1 text-sable-500">
+    <div className="pointer-events-none absolute inset-x-0 bottom-6 flex flex-col items-center gap-1 text-sable-700">
       <span className="text-xs uppercase tracking-wide">{label}</span>
       <motion.svg
         width="20" height="20" viewBox="0 0 24 24" aria-hidden
