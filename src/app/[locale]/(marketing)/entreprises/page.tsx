@@ -15,7 +15,7 @@ export default async function EnterprisePage({ params }: { params: Promise<{ loc
   const tb = await getTranslations('b2b');
   return (
     <main>
-      <section className="bg-ivoire pt-20 pb-10">
+      <section className="bg-white pt-20 pb-10">
         <Container className="max-w-3xl">
           <Reveal>
             <Badge className="bg-or-500/15 text-or-700">{t('soon')}</Badge>

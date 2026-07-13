@@ -2,7 +2,7 @@ import { cn } from '@/lib/utils';
 
 type Tone = 'light' | 'dark' | 'ivoireDeep';
 const toneClass: Record<Tone, string> = {
-  light: 'bg-ivoire text-encre',
+  light: 'bg-white text-encre',
   dark: 'bg-foret-900 text-ivoire',
   ivoireDeep: 'bg-ivoire-deep text-encre',
 };

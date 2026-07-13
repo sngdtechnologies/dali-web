@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils';
 type Variant = 'primary' | 'secondary' | 'ghost';
 const variantClass: Record<Variant, string> = {
   primary: 'bg-foret-800 text-ivoire hover:bg-foret-700',
-  secondary: 'bg-ivoire text-encre border border-encre/15 hover:bg-encre/5',
+  secondary: 'bg-white text-encre border border-encre/15 hover:bg-encre/5',
   ghost: 'text-encre hover:bg-encre/5',
 };
 

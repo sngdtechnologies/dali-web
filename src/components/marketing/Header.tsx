@@ -41,7 +41,7 @@ export function Header({ locale }: { locale: 'fr' | 'en' }) {
   const active = menus.find((m) => m.key === open);
 
   return (
-    <header className={cn('sticky top-0 z-50 transition-all duration-300', scrolled || open ? 'bg-white/95 shadow-sm backdrop-blur' : 'bg-ivoire')}>
+    <header className={cn('sticky top-0 z-50 transition-all duration-300', scrolled || open ? 'bg-white/95 shadow-sm backdrop-blur' : 'bg-white')}>
       <div ref={ref} onMouseLeave={() => setOpen(null)}>
         <Container className={cn('flex items-center justify-between transition-all duration-300', scrolled ? 'py-3' : 'py-4')}>
           <Link href="/" className="flex items-center gap-2 font-serif text-2xl font-bold" onFocus={() => setOpen(null)}>

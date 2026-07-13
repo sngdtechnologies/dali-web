@@ -18,7 +18,7 @@ export default async function FaqPage({ params }: { params: Promise<{ locale: st
   const t = await getTranslations('faq');
   return (
     <main>
-      <section className="bg-ivoire pt-20 pb-10">
+      <section className="bg-white pt-20 pb-10">
         <Container className="max-w-3xl">
           <Reveal>
             <h1 className="font-serif text-5xl">{t('title')}</h1>

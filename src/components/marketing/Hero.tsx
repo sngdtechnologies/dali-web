@@ -28,7 +28,7 @@ function FloatingDashboard() {
 export function Hero() {
   const t = useTranslations('hero');
   return (
-    <section className="relative bg-ivoire pb-24 pt-6">
+    <section className="relative bg-white pb-24 pt-6">
       <Container>
         <div className="grid gap-5 lg:grid-cols-[1.7fr_1fr]">
           <div className="relative overflow-hidden rounded-dali-xl bg-gradient-to-br from-foret-700 to-foret-900 p-8 text-ivoire md:p-12">
