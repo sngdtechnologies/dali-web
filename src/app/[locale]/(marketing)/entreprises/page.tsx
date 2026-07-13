@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { Section } from '@/components/ui/Section';
 import { Container } from '@/components/ui/Container';
@@ -5,8 +6,15 @@ import { Card } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
 import { Button } from '@/components/ui/Button';
 import { Reveal } from '@/components/motion/Reveal';
+import { pageMetadata } from '@/lib/seo';
 
 const ITEMS = ['payments', 'data', 'insights'] as const;
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'pages.enterprise' });
+  return pageMetadata({ locale, path: '/entreprises', title: t('title'), description: t('body') });
+}
 
 export default async function EnterprisePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
