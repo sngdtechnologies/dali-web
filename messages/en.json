@@ -56,15 +56,29 @@
   "locale": { "switchTo": "Français", "label": "Language" },
   "hero": {
     "headline": "Your money, finally clear.",
-    "sub": "Dali brings all your accounts together, tracks your spending automatically, and advises you — even offline.",
+    "sub": "Join the people who choose Dali to manage their finances every day.",
     "alt": "Preview of the Dali dashboard",
-    "scroll": "Scroll"
+    "scroll": "Scroll",
+    "appCard": { "title": "The Dali mobile app", "desc": "Manage your accounts and optimize your spending and savings every day.", "cta": "Get started" },
+    "bizCard": { "title": "Our business solutions", "desc": "Turn your financial data into better performance.", "cta": "Discover our solutions" }
   },
   "showcase": {
     "title": "Install Dali in one scan",
     "sub": "Scan the code with your phone, or download from your store.",
     "qrAlt": "QR code to download the Dali app",
     "learnMore": "Learn more",
+    "eyebrow": "Dali Lab",
+    "discover": "Discover the Dali app",
+    "gridTitle": "Your best financial decisions, every day",
+    "scan": "Scan this QR code to download the app for free and manage your accounts, budgets, and savings with ease.",
+    "cards": {
+      "aggregation": { "title": "All your accounts in one place", "body": "Bring every account together, whatever your bank, in one clear and practical interface." },
+      "sms": { "title": "Track every euro spent", "body": "Each expense is captured and sorted automatically so you see clearly and save more." },
+      "ai": { "title": "An assistant that advises you", "body": "Clear, personalized advice grounded in your real data." },
+      "score": { "title": "Your Dali-Score", "body": "A 0–1000 score that sums up your financial health and grows with you." },
+      "pay": { "title": "Pay and get paid in a tap", "body": "A QR code, a scan, and it's done — between friends or for a pro payment." },
+      "budget": { "title": "Analyze your budget", "body": "A clear overview of your spending and income, sorted by category." }
+    },
     "benefits": {
       "sms": { "title": "Automatic tracking", "body": "Your transactions captured and sorted, no manual entry." },
       "ai": { "title": "AI assistant", "body": "Clear advice grounded in your real data." },
@@ -85,8 +99,21 @@
     "score": { "title": "Your Dali-Score", "body": "A 0–1000 score that sums up your financial health and grows with good habits." },
     "budgets": { "title": "Budgets and goals", "body": "Set budgets, track savings goals, and see your progress at a glance." }
   },
+  "business": {
+    "title": "Dali technology for your business",
+    "intro": "Harness the power of financial data with our access, payment, and enrichment solutions. An Open Banking suite to boost your performance.",
+    "soon": "Soon",
+    "payments": { "title": "Optimize your payments, accelerate your growth", "l1": "Discover Simplified transfer", "l2": "Discover Payment scheduling" },
+    "data": { "title": "Bring intelligence to your financial data", "l1": "Discover Accounts", "l2": "Discover Wealth", "l3": "Discover Insights" },
+    "observatory": { "title": "Anticipate customer trends and expectations", "l1": "Discover our studies" }
+  },
+  "trustRow": {
+    "auto": { "title": "100% automatic tracking", "body": "Your transactions captured and categorized with no manual entry." },
+    "secure": { "title": "Secure by design", "body": "Your financial data is encrypted and protected end to end." },
+    "offline": { "title": "Offline first", "body": "Everything works without a connection; your data stays on your device." }
+  },
   "personas": {
-    "title": "Dali adapts to you",
+    "title": "Open Finance solutions for everyone",
     "sub": "Whatever your profile, Dali brings clarity to your money.",
     "cta": "Discover",
     "prev": "Previous profile",
