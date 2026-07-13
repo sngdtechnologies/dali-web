@@ -4,6 +4,6 @@
 
 @layer base {
   html { -webkit-font-smoothing: antialiased; }
-  body { @apply bg-white text-encre font-sans; }
-  h1, h2, h3 { @apply font-serif font-bold tracking-tight; }
+  body { @apply bg-white font-sans; color: #333; }
+  h1, h2, h3, h4 { @apply font-serif font-medium; line-height: 1.2; }
 }

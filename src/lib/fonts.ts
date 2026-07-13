@@ -1,10 +1,9 @@
-import { Poppins } from 'next/font/google';
+import { Inter } from 'next/font/google';
 
-// Single geometric sans used across the whole site (headings + body), matching the
-// Linxo look. Poppins is the closest freely self-hostable match to Linxo's typeface.
-export const poppins = Poppins({
-  weight: ['400', '500', '600', '700', '800'],
+// Inter closely matches Linxo's native system-font stack (-apple-system / Segoe UI / Roboto…).
+// Single family for headings + body; weights differentiate hierarchy.
+export const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-poppins',
+  variable: '--font-inter',
   display: 'swap',
 });

@@ -22,8 +22,8 @@ const config: Config = {
         'dali-lg': daliRadius.lg, 'dali-xl': daliRadius.xl, 'dali-full': daliRadius.full,
       },
       fontFamily: {
-        serif: ['var(--font-poppins)', 'system-ui', 'sans-serif'],
-        sans: ['var(--font-poppins)', 'system-ui', 'sans-serif'],
+        serif: ['var(--font-inter)', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+        sans: ['var(--font-inter)', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
       },
     },
   },

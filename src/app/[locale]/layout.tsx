@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
-import { poppins } from '@/lib/fonts';
+import { inter } from '@/lib/fonts';
 import '../globals.css';
 
 export function generateStaticParams() {
@@ -21,7 +21,7 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
   const messages = await getMessages();
   return (
-    <html lang={locale} className={poppins.variable}>
+    <html lang={locale} className={inter.variable}>
       <body>
         <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
       </body>
