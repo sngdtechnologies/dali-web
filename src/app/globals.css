@@ -5,5 +5,5 @@
 @layer base {
   html { -webkit-font-smoothing: antialiased; }
   body { @apply bg-ivoire text-encre font-sans; }
-  h1, h2, h3 { @apply font-serif; }
+  h1, h2, h3 { @apply font-serif font-bold tracking-tight; }
 }

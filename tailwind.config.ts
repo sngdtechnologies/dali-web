@@ -22,8 +22,8 @@ const config: Config = {
         'dali-lg': daliRadius.lg, 'dali-xl': daliRadius.xl, 'dali-full': daliRadius.full,
       },
       fontFamily: {
-        serif: ['var(--font-instrument-serif)', 'serif'],
-        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        serif: ['var(--font-poppins)', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-poppins)', 'system-ui', 'sans-serif'],
       },
     },
   },

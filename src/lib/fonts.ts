@@ -1,14 +1,10 @@
-import { Instrument_Serif, Inter } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 
-export const instrumentSerif = Instrument_Serif({
-  weight: '400',
+// Single geometric sans used across the whole site (headings + body), matching the
+// Linxo look. Poppins is the closest freely self-hostable match to Linxo's typeface.
+export const poppins = Poppins({
+  weight: ['400', '500', '600', '700', '800'],
   subsets: ['latin'],
-  variable: '--font-instrument-serif',
-  display: 'swap',
-});
-
-export const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
+  variable: '--font-poppins',
   display: 'swap',
 });
