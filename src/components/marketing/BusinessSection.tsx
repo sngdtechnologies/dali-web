@@ -16,7 +16,7 @@ const CARDS: { k: 'payments' | 'data' | 'observatory'; links: string[]; icon: Re
 export async function BusinessSection() {
   const t = await getTranslations('business');
   return (
-    <Section>
+    <Section className="border-t border-encre/[0.06]">
       <Container>
         <div className="grid gap-8 lg:grid-cols-[1.3fr_1fr] lg:items-end">
           <h2 className="max-w-xl text-4xl md:text-5xl">{t('title')}</h2>

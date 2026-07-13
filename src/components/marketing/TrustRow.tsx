@@ -15,7 +15,7 @@ const ITEMS: { k: 'auto' | 'secure' | 'offline'; icon: ReactNode }[] = [
 export async function TrustRow() {
   const t = await getTranslations('trustRow');
   return (
-    <Section>
+    <Section className="border-t border-encre/[0.06]">
       <Container className="grid gap-6 md:grid-cols-3">
         {ITEMS.map((it) => (
           <Reveal key={it.k}>

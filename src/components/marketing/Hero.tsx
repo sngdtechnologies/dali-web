@@ -4,6 +4,7 @@ import { Reveal } from '@/components/motion/Reveal';
 import { Link } from '@/i18n/routing';
 import { StoreBadges } from './StoreBadges';
 import { ScrollIndicator } from './ScrollIndicator';
+import { PhoneArt } from './PhoneArt';
 
 function Arrow() {
   return (
@@ -45,14 +46,17 @@ export function Hero() {
           </div>
 
           <div className="flex flex-col gap-5">
-            <div className="flex flex-1 flex-col justify-between rounded-dali-xl bg-encre p-6 text-ivoire">
-              <div>
+            <div className="relative flex flex-1 flex-col justify-between overflow-hidden rounded-dali-xl bg-encre p-6 text-ivoire">
+              <div className="relative z-10">
                 <h2 className="text-xl">{t('appCard.title')}</h2>
-                <p className="mt-2 text-sm text-ivoire/70">{t('appCard.desc')}</p>
+                <p className="mt-2 max-w-[72%] text-sm text-ivoire/70">{t('appCard.desc')}</p>
               </div>
-              <a href="#download" className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-or-300 hover:gap-3">
+              <a href="#download" className="relative z-10 mt-6 inline-flex w-fit items-center gap-2 text-sm font-medium text-or-300 hover:gap-3">
                 {t('appCard.cta')} <Arrow />
               </a>
+              <div className="pointer-events-none absolute -bottom-10 -right-5 opacity-90">
+                <PhoneArt variant="accounts" />
+              </div>
             </div>
             <div className="flex flex-1 flex-col justify-between rounded-dali-xl bg-foret-100 p-6 text-encre">
               <div>

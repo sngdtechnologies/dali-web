@@ -22,7 +22,7 @@ const CARDS: { k: string; tint: string; variant: PhoneVariant }[] = [
 export async function AppShowcase() {
   const t = await getTranslations('showcase');
   return (
-    <Section>
+    <Section className="border-t border-encre/[0.06]">
       <Container>
         <div className="flex items-center justify-between gap-4">
           <Badge className="bg-foret-50 text-foret-700">{t('eyebrow')}</Badge>
