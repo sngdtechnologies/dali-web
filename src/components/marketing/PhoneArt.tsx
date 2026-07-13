@@ -34,7 +34,9 @@ function screen(variant: PhoneVariant) {
           {bar(24, 52, 58, 11, IVOIRE, 4)}
           <path d="M24 150 C42 118 58 158 76 128 S104 92 116 116" fill="none" stroke={GOLD} strokeWidth="3" strokeLinecap="round" />
           <path d="M24 150 C42 118 58 158 76 128 S104 92 116 116 L116 180 L24 180 Z" fill={GOLD} opacity="0.12" />
-          {[0, 1, 2].map((i) => bar(24 + i * 32, 196 + (i % 2) * 8, 24, 34 - (i % 2) * 8, FORET7, 4))}
+          {[0, 1, 2].map((i) => (
+            <rect key={i} x={24 + i * 32} y={196 + (i % 2) * 8} width={24} height={34 - (i % 2) * 8} rx={4} fill={FORET7} />
+          ))}
         </>
       );
     case 'ai':
