@@ -36,7 +36,7 @@ export async function AppShowcase() {
           <span className="inline-flex items-center gap-2 rounded-full bg-foret-800 px-4 py-1.5 text-sm font-medium text-ivoire">
             <LabMark /> {t('eyebrow')}
           </span>
-          <Link href="/fonctionnalites" className="text-sm font-medium text-foret-700 underline decoration-1 underline-offset-4 hover:no-underline">
+          <Link href="/solutions/app" className="text-sm font-medium text-foret-700 underline decoration-1 underline-offset-4 hover:no-underline">
             {t('discover')} →
           </Link>
         </div>

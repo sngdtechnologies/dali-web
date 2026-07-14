@@ -49,9 +49,9 @@ export function getNavMenus(t: TFn): NavMenu[] {
         {
           title: t(m('solutions.app.title')), tagline: t(m('solutions.app.tagline')),
           items: [
-            item(m('solutions.app.i1'), '/fonctionnalites', icons.app),
-            item(m('solutions.app.i2'), '/fonctionnalites', icons.ai),
-            item(m('solutions.app.i3'), '/fonctionnalites', icons.score),
+            item(m('solutions.app.i1'), '/solutions/app', icons.app),
+            item(m('solutions.app.i2'), '/solutions/app#assistant-ia', icons.ai),
+            item(m('solutions.app.i3'), '/solutions/app#dali-score', icons.score),
           ],
         },
         {

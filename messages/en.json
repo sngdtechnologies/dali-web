@@ -62,6 +62,35 @@
     "appCard": { "title": "The Dali mobile app", "desc": "Manage your accounts and optimize your spending and savings every day.", "cta": "Get started" },
     "bizCard": { "title": "Our business solutions", "desc": "Turn your financial data into better performance.", "cta": "Discover our solutions" }
   },
+  "solutions": {
+    "app": {
+      "eyebrow": "Dali app",
+      "title": "Your finances, finally clear",
+      "sub": "Accounts, spending, savings and advice: Dali brings your whole financial life into one clear, free app.",
+      "features": {
+        "overview": {
+          "title": "Every account, one view",
+          "body": "Connect all your banks and track your total balance in real time. No more jumping between apps — your money, all in one place."
+        },
+        "assistant": {
+          "title": "An assistant that advises you",
+          "body": "Dali's AI assistant answers your questions and guides you with clear, personalized advice grounded in your real data."
+        },
+        "score": {
+          "title": "Your Dali-Score, from 0 to 1000",
+          "body": "A simple indicator of your financial health that grows with your good habits and shows you exactly how to improve."
+        },
+        "budget": {
+          "title": "Budgets that hold",
+          "body": "Set budgets by category, track your savings goals and watch your progress month after month, effortlessly."
+        }
+      },
+      "cta": {
+        "title": "Ready to see clearly?",
+        "body": "Download Dali for free and take control of your finances today."
+      }
+    }
+  },
   "showcase": {
     "title": "Install Dali in one scan",
     "sub": "Scan the code with your phone, or download from your store.",

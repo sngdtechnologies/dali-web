@@ -4,6 +4,7 @@ import { routing } from '@/i18n/routing';
 const PATHS = [
   '',
   '/fonctionnalites',
+  '/solutions/app',
   '/securite',
   '/faq',
   '/a-propos',

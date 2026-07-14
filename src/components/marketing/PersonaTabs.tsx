@@ -63,7 +63,7 @@ export function PersonaTabs() {
           <div className="flex flex-col">
             <p className="text-xl leading-relaxed text-encre md:text-2xl">{t(`${current}.body`)}</p>
             <Link
-              href="/fonctionnalites"
+              href="/solutions/app"
               className="mt-7 inline-flex w-fit items-center gap-2 rounded-dali-full bg-foret-800 px-5 py-3 text-sm font-medium text-ivoire transition-colors hover:bg-foret-700"
             >
               {t('appCta')}
