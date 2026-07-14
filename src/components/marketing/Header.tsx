@@ -46,7 +46,7 @@ export function Header({ locale }: { locale: 'fr' | 'en' }) {
         <Container className={cn('flex items-center justify-between transition-all duration-300', scrolled ? 'py-3' : 'py-4')}>
           <Link href="/" className="flex items-center" aria-label="Dali" onFocus={() => setOpen(null)}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo.svg" alt="Dali" className="h-9 w-auto" />
+            <img src="/logo.svg" alt="Dali" className="h-11 w-auto" />
           </Link>
           <nav className="hidden items-center gap-1 md:flex">
             {menus.map((menu) => (
