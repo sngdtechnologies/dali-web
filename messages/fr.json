@@ -17,11 +17,11 @@
         "payments": {
           "title": "Paiements", "tagline": "Optimisez vos paiements, accélérez votre croissance",
           "i1": { "label": "Virement simplifié", "desc": "Le paiement par virement sécurisé en quelques clics" },
-          "i2": { "label": "Échéancier de paiement", "desc": "Le paiement flexible et sans contrainte" }
+          "i2": { "label": "Objectifs & chantiers", "desc": "Épargnez pour vos projets et suivez vos chantiers" }
         },
         "data": {
           "title": "Données & API", "tagline": "Donnez de l'intelligence à vos données financières",
-          "i1": { "label": "Comptes", "desc": "L'accès aux comptes 100% sécurisé" },
+          "i1": { "label": "Agrégation multi-compte", "desc": "Tous vos comptes réunis dans une seule vue" },
           "i2": { "label": "Patrimoine", "desc": "Vos données patrimoniales valorisées" },
           "i3": { "label": "Insights", "desc": "Vos données financières enrichies" }
         },

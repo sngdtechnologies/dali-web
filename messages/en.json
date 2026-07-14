@@ -17,11 +17,11 @@
         "payments": {
           "title": "Payments", "tagline": "Optimize your payments, accelerate growth",
           "i1": { "label": "Simplified transfer", "desc": "Secure bank-transfer payment in a few clicks" },
-          "i2": { "label": "Payment scheduling", "desc": "Flexible, hassle-free payments" }
+          "i2": { "label": "Goals & projects", "desc": "Save for your goals and track your building projects" }
         },
         "data": {
           "title": "Data & API", "tagline": "Bring intelligence to your financial data",
-          "i1": { "label": "Accounts", "desc": "100% secure account access" },
+          "i1": { "label": "Multi-account aggregation", "desc": "All your accounts in a single view" },
           "i2": { "label": "Wealth", "desc": "Your wealth data, enriched" },
           "i3": { "label": "Insights", "desc": "Your financial data, enriched" }
         },
