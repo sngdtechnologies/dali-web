@@ -19,9 +19,9 @@ export function Footer() {
     {
       title: t('colProduct'),
       links: [
-        { label: t('app'), href: '/fonctionnalites' },
-        { label: t('ai'), href: '/fonctionnalites' },
-        { label: t('score'), href: '/fonctionnalites' },
+        { label: t('app'), href: '/solutions/app' },
+        { label: t('ai'), href: '/solutions/app#assistant-ia' },
+        { label: t('score'), href: '/solutions/app#dali-score' },
         { label: t('features'), href: '/fonctionnalites' },
         { label: t('security'), href: '/securite' },
       ],
