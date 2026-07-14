@@ -2,7 +2,7 @@ import type { ReactNode } from 'react';
 
 type TFn = (key: string) => string;
 
-export type MegaItem = { label: string; desc: string; href: string; icon: ReactNode };
+export type MegaItem = { label: string; desc: string; href: string; icon: ReactNode; badge?: string };
 export type MegaColumn = { title: string; tagline: string; items: MegaItem[] };
 export type MegaPromo = { title: string; desc: string; badge: string; href: string; image?: string };
 export type NavMenu =
@@ -39,9 +39,10 @@ const icons: Record<string, ReactNode> = {
 
 export function getNavMenus(t: TFn): NavMenu[] {
   const m = (k: string) => `mega.${k}`;
-  const item = (k: string, href: string, icon: ReactNode): MegaItem => ({
-    label: t(`${k}.label`), desc: t(`${k}.desc`), href, icon,
+  const item = (k: string, href: string, icon: ReactNode, badge?: string): MegaItem => ({
+    label: t(`${k}.label`), desc: t(`${k}.desc`), href, icon, badge,
   });
+  const soon = t(m('soon'));
   return [
     {
       key: 'solutions', label: t('solutions'), layout: 'columns',
@@ -64,14 +65,14 @@ export function getNavMenus(t: TFn): NavMenu[] {
         {
           title: t(m('solutions.data.title')), tagline: t(m('solutions.data.tagline')),
           items: [
-            item(m('solutions.data.i1'), '/solutions/solution-aggregation-bancaire', icons.accounts),
+            item(m('solutions.data.i1'), '/solutions/solution-aggregation-bancaire', icons.accounts, soon),
             item(m('solutions.data.i2'), '/solutions/wealth', icons.wealth),
             item(m('solutions.data.i3'), '/solutions/insights', icons.insights),
           ],
         },
         {
           title: t(m('solutions.observatory.title')), tagline: t(m('solutions.observatory.tagline')),
-          items: [item(m('solutions.observatory.i1'), '/solutions/nos-etudes', icons.study)],
+          items: [item(m('solutions.observatory.i1'), '/solutions/nos-etudes', icons.study, soon)],
         },
       ],
     },

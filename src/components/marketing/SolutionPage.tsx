@@ -61,7 +61,10 @@ export async function SolutionPage({ solution }: { solution: Solution }) {
         <Container>
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <Reveal>
-              <Badge className="bg-foret-50 text-foret-700">{t('eyebrow')}</Badge>
+              <div className="flex flex-wrap items-center gap-2">
+                <Badge className="bg-foret-50 text-foret-700">{t('eyebrow')}</Badge>
+                {solution.soon && <Badge className="bg-or-500/15 text-or-700">{t('soon')}</Badge>}
+              </div>
               <h1 className="mt-4 text-4xl leading-tight text-foret-800 md:text-5xl">{t('title')}</h1>
               <p className="mt-5 max-w-md text-lg text-sable-700">{t('sub')}</p>
               <div className="mt-8">{cta}</div>

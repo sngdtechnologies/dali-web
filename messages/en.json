@@ -6,6 +6,7 @@
     "about": "About",
     "contact": "Contact us",
     "mega": {
+      "soon": "Soon",
       "solutions": {
         "app": {
           "title": "Dali app", "tagline": "Your best financial decisions, every day",
@@ -92,75 +93,71 @@
     },
     "virement": {
       "eyebrow": "Payments",
-      "title": "Bank transfer, simplified",
-      "sub": "Get paid by bank transfer in seconds — no card, no friction. A smooth, secure and low-cost payment experience.",
-      "ctaBtn": "Contact us",
+      "title": "Your Mobile Money transfers, prepared in one tap",
+      "sub": "Start an MTN MoMo or Orange Money payment from Dali: the app fills in the USSD code for you, ready to send. Dali never touches your money.",
       "features": {
-        "instant": { "title": "Paid in seconds", "body": "The customer confirms from their banking app: the payment is confirmed instantly, with no card entry." },
-        "frictionless": { "title": "Zero friction for your customers", "body": "No numbers to retype, no useless steps — a clear payment journey from first to last screen." },
-        "cost": { "title": "Costs under control", "body": "Transfers cost far less than cards, with no compromise on security." }
+        "prepare": { "title": "The right code, pre-filled", "body": "Pick the recipient and amount: Dali prepares the exact USSD code (*126*1*…), with no typing errors." },
+        "dialer": { "title": "One tap and you're set", "body": "Dali opens your phone dialer with the code already entered — just confirm with your operator PIN." },
+        "track": { "title": "Automatic tracking", "body": "When the transaction comes back by SMS, Dali detects it and sorts it into the right category, with no manual entry." }
       },
-      "cta": { "title": "Ready to simplify collection?", "body": "Let's talk about your use case and add Dali transfers to your flow." }
+      "cta": { "title": "Pay faster, error-free", "body": "Download Dali and prepare your MoMo and Orange Money transfers in seconds." }
     },
     "echeancier": {
-      "eyebrow": "Payments",
-      "title": "Payment scheduling",
-      "sub": "Let your customers pay in installments, at their own pace. Flexible, transparent payments with no constraints.",
-      "ctaBtn": "Contact us",
+      "eyebrow": "Savings",
+      "title": "Your savings goals and building projects",
+      "sub": "Set money aside for what matters — school fees, loan repayment, travel — and track your building projects from the first stone to the last contribution.",
       "features": {
-        "split": { "title": "Pay in installments", "body": "Spread the amount over several due dates and remove the barrier of paying all at once." },
-        "flexible": { "title": "No constraints", "body": "Schedules tailored to each customer, adjustable to your business rules." },
-        "transparent": { "title": "Full transparency", "body": "Every installment is clear, notified and tracked — no bad surprises." }
+        "goals": { "title": "Goals that fit you", "body": "Education, travel, repayment or a free-form project: set an amount, a deadline, and let Dali work out the pace." },
+        "chantier": { "title": "Track your building projects", "body": "Construction, renovation: follow the money you put in and watch your project reach \"X% built\" as contributions add up." },
+        "simulate": { "title": "Adjust the pace", "body": "Simulate a monthly contribution and instantly see when you'll reach your goal." }
       },
-      "cta": { "title": "Smooth out your payments", "body": "Let's explore how Dali scheduling fits into your offering." }
+      "cta": { "title": "Build your projects, month after month", "body": "Download Dali and give your savings a direction." }
     },
     "aggregation": {
-      "eyebrow": "Data & API",
-      "title": "Bank aggregation",
-      "sub": "Access your users' accounts securely through a single API. Every bank, one integration.",
-      "ctaBtn": "Contact us",
+      "eyebrow": "Accounts",
+      "soon": "Soon",
+      "title": "Every account, one view",
+      "sub": "Bring your MTN MoMo, Orange Money and bank accounts together into a single, synchronized view. Coming soon to Dali.",
       "features": {
-        "connect": { "title": "Every bank, one API", "body": "Connect your users' accounts whatever their bank, with coverage that keeps expanding." },
-        "secure": { "title": "100% secure", "body": "Regulated, encrypted access that respects user consent at every step." },
-        "integrate": { "title": "Fast integration", "body": "A clear, documented API to plug aggregation into your product within days." }
+        "sources": { "title": "All your sources together", "body": "MoMo, Orange Money, bank: connect each source and track your total balance at a glance." },
+        "sync": { "title": "Continuously synced", "body": "Your balances and transactions update automatically, with no re-entry." },
+        "clarity": { "title": "A clear view", "body": "No more jumping between apps — your money, all in one place." }
       },
-      "cta": { "title": "Bring your data to life", "body": "Contact us for access to the Dali aggregation API." }
+      "cta": { "title": "Soon: all your accounts together", "body": "Download Dali to be ready the moment multi-account aggregation opens." }
     },
     "wealth": {
-      "eyebrow": "Data & API",
-      "title": "Wealth — your wealth data, valued",
-      "sub": "Give your users a complete, real-time view of their wealth, with every asset in one place.",
-      "ctaBtn": "Contact us",
+      "eyebrow": "Wealth",
+      "title": "Your wealth, at a glance",
+      "sub": "Accounts, savings, investments, real estate, tontines: track the total value of what you own, revalued anytime.",
       "features": {
-        "vision": { "title": "A complete wealth view", "body": "Accounts, savings, investments: aggregate the entire portfolio into a single view." },
-        "enriched": { "title": "Enriched data", "body": "Each asset is structured, categorized and valued for analysis you can use right away." },
-        "realtime": { "title": "In real time", "body": "Wealth that updates continuously, for decisions made at the right moment." }
+        "total": { "title": "Your total wealth", "body": "Add up every asset — cash, investments, property, tontine — for a clear picture of your net worth." },
+        "assets": { "title": "Every asset at its true value", "body": "Add land, a BVMAC/OPCVM investment, crypto or a tontine share, with supporting documents, and revalue it whenever you want." },
+        "track": { "title": "Follow the trend", "body": "Visualize your wealth's progress over several months and stay on course." }
       },
-      "cta": { "title": "Value your clients' wealth", "body": "Let's talk about integrating Wealth into your financial products." }
+      "cta": { "title": "Steer your wealth", "body": "Download Dali and keep a complete view of what you own." }
     },
     "insights": {
-      "eyebrow": "Data & API",
-      "title": "Insights",
-      "sub": "Turn raw statements into clear data: readable labels, reliable categories and detected recurrences.",
-      "ctaBtn": "Contact us",
+      "eyebrow": "Insights",
+      "title": "Insights that move you forward",
+      "sub": "Dali analyzes your spending and habits to deliver clear, personalized observations grounded in your real data.",
       "features": {
-        "labels": { "title": "Clarified bank labels", "body": "Cryptic entries become readable merchant names, recognizable at a glance." },
-        "categorize": { "title": "Automatic categorization", "body": "Every transaction is sorted into the right category, with no manual work." },
-        "recurring": { "title": "Recurrences detected", "body": "Subscriptions and recurring charges are identified automatically to plan ahead." }
+        "observe": { "title": "What your spending reveals", "body": "Dali spots trends in your spending and explains them simply, month after month." },
+        "personal": { "title": "Personalized, never generic", "body": "Every observation starts from your real transactions — no canned advice." },
+        "act": { "title": "Take action", "body": "Concrete suggestions to save more and avoid bad surprises." }
       },
-      "cta": { "title": "Enrich your financial data", "body": "Contact us to integrate Insights into your platform." }
+      "cta": { "title": "Understand your money", "body": "Download Dali and let your data work for you." }
     },
     "etudes": {
       "eyebrow": "Observatory",
+      "soon": "Soon",
       "title": "Our studies",
-      "sub": "Anticipate your customers' trends and expectations with our analysis of financial behavior.",
-      "ctaBtn": "Contact us",
+      "sub": "Coming soon: our analysis of financial trends and behavior, to inform your decisions.",
       "features": {
         "trends": { "title": "Consumption trends", "body": "Decode how spending, saving and financial habits evolve." },
         "exclusive": { "title": "Exclusive analysis", "body": "Original studies drawn from real, aggregated and anonymized data." },
-        "decisions": { "title": "To guide your decisions", "body": "Concrete insights to steer your strategy and your products." }
+        "decisions": { "title": "To guide your decisions", "body": "Concrete insights to steer your choices." }
       },
-      "cta": { "title": "Stay one step ahead", "body": "Contact us to access our studies and analysis." }
+      "cta": { "title": "Coming soon", "body": "Stay tuned: our first studies are on the way." }
     }
   },
   "showcase": {
@@ -174,7 +171,7 @@
     "scan": "Scan this QR code to download the app for free and manage your accounts, budgets, and savings with ease.",
     "cards": {
       "aggregation": { "title": "All your accounts in one place", "body": "Bring every account together, whatever your bank, in one clear and practical interface." },
-      "sms": { "title": "Track every euro spent", "body": "Each expense is captured and sorted automatically so you see clearly and save more." },
+      "sms": { "title": "Track every franc spent", "body": "Each expense is captured and sorted automatically so you see clearly and save more." },
       "ai": { "title": "An assistant that advises you", "body": "Clear, personalized advice grounded in your real data." },
       "score": { "title": "Your Dali-Score", "body": "A 0–1000 score that sums up your financial health and grows with you." },
       "pay": { "title": "Pay and get paid in a tap", "body": "A QR code, a scan, and it's done — between friends or for a pro payment." },

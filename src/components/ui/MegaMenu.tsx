@@ -9,7 +9,12 @@ function ItemLink({ item }: { item: MegaItem }) {
         {item.icon}
       </span>
       <span>
-        <span className="block text-sm font-semibold text-encre">{item.label}</span>
+        <span className="flex items-center gap-2 text-sm font-semibold text-encre">
+          {item.label}
+          {item.badge && (
+            <span className="rounded-dali-full bg-or-500/15 px-2 py-0.5 text-[10px] font-medium text-or-700">{item.badge}</span>
+          )}
+        </span>
         <span className="block text-xs leading-snug text-sable-700">{item.desc}</span>
       </span>
     </Link>

@@ -8,6 +8,7 @@ import { LocaleSwitcher } from '@/components/ui/LocaleSwitcher';
 import { MegaMenu } from '@/components/ui/MegaMenu';
 import { getNavMenus } from './nav-data';
 import { cn } from '@/lib/utils';
+import { CONTACT_HREF } from '@/lib/config';
 
 export function Header({ locale }: { locale: 'fr' | 'en' }) {
   const t = useTranslations('nav');
@@ -71,7 +72,7 @@ export function Header({ locale }: { locale: 'fr' | 'en' }) {
           </nav>
           <div className="flex items-center gap-3">
             <LocaleSwitcher currentLocale={locale} />
-            <Button href="mailto:contact@dali.app" variant="secondary" className="hidden sm:inline-flex">
+            <Button href={CONTACT_HREF} variant="secondary" className="hidden sm:inline-flex">
               {t('contact')}
             </Button>
           </div>

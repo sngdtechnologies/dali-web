@@ -43,7 +43,7 @@ function FloatingDashboard() {
   return (
     <div className="pointer-events-none absolute right-5 top-5 hidden w-64 rounded-dali-lg bg-white/95 p-4 text-encre shadow-xl backdrop-blur sm:block" aria-hidden>
       <div className="flex items-center gap-2">
-        <span className="font-serif text-2xl font-medium text-foret-800">+4 226,34 €</span>
+        <span className="font-serif text-2xl font-medium text-foret-800">2 458 200 FCFA</span>
         <span className="rounded-full bg-serenite/15 px-1.5 py-0.5 text-[11px] font-semibold text-serenite">+5,68 %</span>
       </div>
       <div className="mt-0.5 text-[11px] text-sable-700">Mon patrimoine</div>

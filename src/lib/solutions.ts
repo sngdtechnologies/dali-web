@@ -4,13 +4,14 @@ export type Solution = {
   slug: string;
   key: string;
   business?: boolean;
+  soon?: boolean;
   hero?: string;
   heroPhoto?: boolean;
   heroGradient?: boolean;
   features: SolutionFeature[];
 };
 
-const businessFeatures = (keys: string[]): SolutionFeature[] => keys.map((k) => ({ k, gradient: true }));
+const gradientFeatures = (keys: string[]): SolutionFeature[] => keys.map((k) => ({ k, gradient: true }));
 
 export const SOLUTIONS: Record<string, Solution> = {
   app: {
@@ -25,28 +26,28 @@ export const SOLUTIONS: Record<string, Solution> = {
     ],
   },
   'virement-simplifie': {
-    slug: 'virement-simplifie', key: 'virement', business: true, heroGradient: true,
-    features: businessFeatures(['instant', 'frictionless', 'cost']),
+    slug: 'virement-simplifie', key: 'virement', heroGradient: true,
+    features: gradientFeatures(['prepare', 'dialer', 'track']),
   },
   'echeancier-de-paiement': {
-    slug: 'echeancier-de-paiement', key: 'echeancier', business: true, heroGradient: true,
-    features: businessFeatures(['split', 'flexible', 'transparent']),
+    slug: 'echeancier-de-paiement', key: 'echeancier', heroGradient: true,
+    features: gradientFeatures(['goals', 'chantier', 'simulate']),
   },
   'solution-aggregation-bancaire': {
-    slug: 'solution-aggregation-bancaire', key: 'aggregation', business: true, heroGradient: true,
-    features: businessFeatures(['connect', 'secure', 'integrate']),
+    slug: 'solution-aggregation-bancaire', key: 'aggregation', soon: true, heroGradient: true,
+    features: gradientFeatures(['sources', 'sync', 'clarity']),
   },
   wealth: {
-    slug: 'wealth', key: 'wealth', business: true, heroGradient: true,
-    features: businessFeatures(['vision', 'enriched', 'realtime']),
+    slug: 'wealth', key: 'wealth', heroGradient: true,
+    features: gradientFeatures(['total', 'assets', 'track']),
   },
   insights: {
-    slug: 'insights', key: 'insights', business: true, heroGradient: true,
-    features: businessFeatures(['labels', 'categorize', 'recurring']),
+    slug: 'insights', key: 'insights', heroGradient: true,
+    features: gradientFeatures(['observe', 'personal', 'act']),
   },
   'nos-etudes': {
-    slug: 'nos-etudes', key: 'etudes', business: true, heroGradient: true,
-    features: businessFeatures(['trends', 'exclusive', 'decisions']),
+    slug: 'nos-etudes', key: 'etudes', soon: true, heroGradient: true,
+    features: gradientFeatures(['trends', 'exclusive', 'decisions']),
   },
 };
 
