@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import { getTranslations } from 'next-intl/server';
+import Image from 'next/image';
 import { Section } from '@/components/ui/Section';
 import { Container } from '@/components/ui/Container';
 import { Reveal } from '@/components/motion/Reveal';
@@ -7,24 +8,21 @@ import { Link } from '@/i18n/routing';
 
 const P = { width: 16, height: 16, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 1.8, strokeLinecap: 'round' as const, strokeLinejoin: 'round' as const, 'aria-hidden': true };
 
-const CARDS: { k: 'payments' | 'data' | 'observatory'; links: string[]; icon: ReactNode; bg: string; glow: string }[] = [
+const CARDS: { k: 'payments' | 'data' | 'observatory'; links: string[]; icon: ReactNode; img: string; pos: string }[] = [
   {
     k: 'payments', links: ['l1', 'l2'],
     icon: <svg {...P}><path d="M3 8h14l-3-3M21 16H7l3 3" /></svg>,
-    bg: 'bg-gradient-to-br from-foret-600 via-foret-800 to-foret-900',
-    glow: 'bg-or-500/25 -right-16 -top-10',
+    img: '/business/payments.webp', pos: 'object-center',
   },
   {
     k: 'data', links: ['l1', 'l2', 'l3'],
     icon: <svg {...P}><path d="M12 3 3 8l9 5 9-5-9-5ZM3 12l9 5 9-5" /></svg>,
-    bg: 'bg-gradient-to-br from-foret-900 via-encre to-foret-800',
-    glow: 'bg-foret-500/30 -left-12 top-24',
+    img: '/business/data.webp', pos: 'object-right',
   },
   {
     k: 'observatory', links: ['l1'],
     icon: <svg {...P}><path d="M4 20V10M10 20V4M16 20v-7M22 20V8" /></svg>,
-    bg: 'bg-gradient-to-b from-foret-700 via-foret-800 to-encre',
-    glow: 'bg-or-300/20 right-0 top-1/2',
+    img: '/business/observatory.webp', pos: 'object-center',
   },
 ];
 
@@ -48,8 +46,10 @@ export async function BusinessSection() {
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {CARDS.map((c) => (
             <Reveal key={c.k}>
-              <div className={`relative flex min-h-[480px] flex-col overflow-hidden rounded-dali-xl p-6 text-ivoire ${c.bg}`}>
-                <div className={`pointer-events-none absolute h-48 w-48 rounded-full blur-3xl ${c.glow}`} aria-hidden />
+              <div className="relative flex min-h-[480px] flex-col overflow-hidden rounded-dali-xl bg-foret-900 p-6 text-ivoire">
+                <Image src={c.img} alt="" fill sizes="(max-width: 768px) 100vw, 380px" className={`object-cover ${c.pos}`} />
+                <div className="pointer-events-none absolute inset-0 bg-foret-900/45" aria-hidden />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-foret-900 via-foret-900/70 to-transparent" aria-hidden />
                 <span className="relative z-10 inline-flex w-fit items-center gap-2 rounded-full bg-white px-3.5 py-1.5 text-sm font-medium text-encre">
                   <span className="text-foret-700">{c.icon}</span> {t(`${c.k}.badge`)}
                 </span>
