@@ -103,9 +103,30 @@
     "title": "La technologie Dali au service de votre business",
     "intro": "Exploitez la puissance de la donnée financière avec nos solutions d'accès aux données, de paiement et d'enrichissement. Une suite Open Banking pour augmenter vos performances.",
     "soon": "Bientôt",
-    "payments": { "title": "Optimisez vos paiements, accélérez votre croissance", "l1": "Découvrez le virement simplifié", "l2": "Découvrez l'échéancier de paiement" },
-    "data": { "title": "Donnez de l'intelligence à vos données financières", "l1": "Découvrez Comptes", "l2": "Découvrez Patrimoine", "l3": "Découvrez Insights" },
-    "observatory": { "title": "Anticipez les tendances et attentes des clients", "l1": "Découvrez nos études" }
+    "payments": {
+      "badge": "Paiements",
+      "title": "Optimisez vos paiements, accélérez votre croissance",
+      "links": {
+        "l1": { "label": "Découvrez le virement simplifié", "desc": "Le paiement sécurisé, rapide et fluide" },
+        "l2": { "label": "Découvrez l'échéancier de paiement", "desc": "Le paiement flexible et sans contrainte" }
+      }
+    },
+    "data": {
+      "badge": "Données & API",
+      "title": "Donnez de l'intelligence à vos données financières",
+      "links": {
+        "l1": { "label": "Découvrez Comptes", "desc": "L'accès aux comptes 100% sécurisé" },
+        "l2": { "label": "Découvrez Patrimoine", "desc": "Vos données patrimoniales valorisées" },
+        "l3": { "label": "Découvrez Insights", "desc": "Vos libellés bancaires clarifiés" }
+      }
+    },
+    "observatory": {
+      "badge": "Observatoire",
+      "title": "Anticipez les tendances et attentes des clients",
+      "links": {
+        "l1": { "label": "Découvrez nos études", "desc": "Les tendances de comportements financiers" }
+      }
+    }
   },
   "trustRow": {
     "auto": { "title": "Suivi 100% automatique", "body": "Vos transactions captées et catégorisées sans aucune saisie manuelle." },

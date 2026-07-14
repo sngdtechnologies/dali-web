@@ -103,9 +103,30 @@
     "title": "Dali technology for your business",
     "intro": "Harness the power of financial data with our access, payment, and enrichment solutions. An Open Banking suite to boost your performance.",
     "soon": "Soon",
-    "payments": { "title": "Optimize your payments, accelerate your growth", "l1": "Discover Simplified transfer", "l2": "Discover Payment scheduling" },
-    "data": { "title": "Bring intelligence to your financial data", "l1": "Discover Accounts", "l2": "Discover Wealth", "l3": "Discover Insights" },
-    "observatory": { "title": "Anticipate customer trends and expectations", "l1": "Discover our studies" }
+    "payments": {
+      "badge": "Payments",
+      "title": "Optimize your payments, accelerate your growth",
+      "links": {
+        "l1": { "label": "Discover Simplified transfer", "desc": "Secure, fast and smooth payments" },
+        "l2": { "label": "Discover Payment scheduling", "desc": "Flexible payments, no constraints" }
+      }
+    },
+    "data": {
+      "badge": "Data & API",
+      "title": "Bring intelligence to your financial data",
+      "links": {
+        "l1": { "label": "Discover Accounts", "desc": "100% secure account access" },
+        "l2": { "label": "Discover Wealth", "desc": "Your wealth data, valued" },
+        "l3": { "label": "Discover Insights", "desc": "Your bank labels, clarified" }
+      }
+    },
+    "observatory": {
+      "badge": "Observatory",
+      "title": "Anticipate customer trends and expectations",
+      "links": {
+        "l1": { "label": "Discover our studies", "desc": "Financial behavior trends" }
+      }
+    }
   },
   "trustRow": {
     "auto": { "title": "100% automatic tracking", "body": "Your transactions captured and categorized with no manual entry." },
