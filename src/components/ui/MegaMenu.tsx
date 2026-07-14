@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Link } from '@/i18n/routing';
 import type { MegaColumn, MegaItem, MegaPromo } from '@/components/marketing/nav-data';
 
@@ -49,14 +50,20 @@ export function MegaMenu(props: Props) {
           href={props.promo.href}
           className="relative flex flex-col justify-between overflow-hidden rounded-dali-lg bg-foret-800 p-6 text-ivoire transition-transform hover:-translate-y-0.5"
         >
-          <div>
+          {props.promo.image && (
+            <>
+              <Image src={props.promo.image} alt="" fill sizes="320px" className="object-cover" />
+              <div className="absolute inset-0 bg-foret-900/80" aria-hidden />
+            </>
+          )}
+          <div className="relative z-10">
             <span className="inline-block rounded-dali-full bg-or-500/20 px-2.5 py-0.5 text-xs font-medium text-or-300">
               {props.promo.badge}
             </span>
             <h3 className="mt-4 font-serif text-xl">{props.promo.title}</h3>
             <p className="mt-2 text-sm text-ivoire/70">{props.promo.desc}</p>
           </div>
-          <span aria-hidden className="mt-6 flex h-9 w-9 items-center justify-center self-end rounded-dali-full bg-ivoire/10">→</span>
+          <span aria-hidden className="relative z-10 mt-6 flex h-9 w-9 items-center justify-center self-end rounded-dali-full bg-ivoire/10">→</span>
         </Link>
       )}
     </div>

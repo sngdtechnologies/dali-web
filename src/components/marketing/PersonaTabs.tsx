@@ -2,11 +2,20 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import { AnimatePresence, motion } from 'framer-motion';
 import { Container } from '@/components/ui/Container';
 import { Link } from '@/i18n/routing';
 import { cn } from '@/lib/utils';
 
 const PERSONAS = ['individuals', 'students', 'families', 'professionals', 'ecommerce'] as const;
+
+const SCREENS: Record<(typeof PERSONAS)[number], string> = {
+  individuals: 'comptes',
+  students: 'budget',
+  families: 'depenses',
+  professionals: 'score',
+  ecommerce: 'assistant',
+};
 
 export function PersonaTabs() {
   const t = useTranslations('personas');
@@ -36,13 +45,19 @@ export function PersonaTabs() {
             ))}
           </div>
 
-          <div className="relative mx-auto hidden h-[460px] w-full max-w-[360px] lg:block" aria-hidden>
-            <div className="absolute left-0 top-4 aspect-[9/19] w-[58%] overflow-hidden rounded-[24px] bg-foret-900 shadow-xl ring-1 ring-black/5">
-              <Image src="/screens/comptes.webp" alt="" fill sizes="220px" className="object-cover object-top" />
-            </div>
-            <div className="absolute right-0 top-16 aspect-[9/19] w-[56%] overflow-hidden rounded-[24px] bg-white shadow-2xl ring-1 ring-black/5">
-              <Image src="/screens/paiement.webp" alt="" fill sizes="220px" className="object-cover object-top" />
-            </div>
+          <div className="relative mx-auto hidden h-[460px] w-full max-w-[260px] lg:block" aria-hidden>
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={current}
+                initial={{ opacity: 0, y: 12, scale: 0.98 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                exit={{ opacity: 0, y: -12, scale: 0.98 }}
+                transition={{ duration: 0.35, ease: [0.22, 0.61, 0.36, 1] }}
+                className="absolute inset-x-0 top-2 mx-auto aspect-[9/19] w-full overflow-hidden rounded-[28px] bg-foret-900 shadow-2xl ring-1 ring-black/5"
+              >
+                <Image src={`/screens/${SCREENS[current]}.webp`} alt="" fill sizes="260px" className="object-cover object-top" />
+              </motion.div>
+            </AnimatePresence>
           </div>
 
           <div className="flex flex-col">

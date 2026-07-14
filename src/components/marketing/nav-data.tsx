@@ -4,7 +4,7 @@ type TFn = (key: string) => string;
 
 export type MegaItem = { label: string; desc: string; href: string; icon: ReactNode };
 export type MegaColumn = { title: string; tagline: string; items: MegaItem[] };
-export type MegaPromo = { title: string; desc: string; badge: string; href: string };
+export type MegaPromo = { title: string; desc: string; badge: string; href: string; image?: string };
 export type NavMenu =
   | { key: string; label: string; layout: 'columns'; columns: MegaColumn[] }
   | { key: string; label: string; layout: 'grid'; items: MegaItem[]; promo?: MegaPromo };
@@ -85,7 +85,7 @@ export function getNavMenus(t: TFn): NavMenu[] {
         item(m('usecases.i5'), '/entreprises', icons.qr),
         item(m('usecases.i6'), '/entreprises', icons.cart),
       ],
-      promo: { title: t(m('usecases.promo.title')), desc: t(m('usecases.promo.desc')), badge: t(m('usecases.promo.badge')), href: '/entreprises' },
+      promo: { title: t(m('usecases.promo.title')), desc: t(m('usecases.promo.desc')), badge: t(m('usecases.promo.badge')), href: '/entreprises', image: '/menu/usecases.webp' },
     },
     {
       key: 'resources', label: t('resources'), layout: 'grid',
