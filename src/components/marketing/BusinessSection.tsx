@@ -8,6 +8,15 @@ import { Link } from '@/i18n/routing';
 
 const P = { width: 16, height: 16, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 1.8, strokeLinecap: 'round' as const, strokeLinejoin: 'round' as const, 'aria-hidden': true };
 
+const HREFS: Record<string, string> = {
+  'payments.l1': '/solutions/virement-simplifie',
+  'payments.l2': '/solutions/echeancier-de-paiement',
+  'data.l1': '/solutions/solution-aggregation-bancaire',
+  'data.l2': '/solutions/wealth',
+  'data.l3': '/solutions/insights',
+  'observatory.l1': '/solutions/nos-etudes',
+};
+
 const CARDS: { k: 'payments' | 'data' | 'observatory'; links: string[]; icon: ReactNode; img: string; pos: string }[] = [
   {
     k: 'payments', links: ['l1', 'l2'],
@@ -57,7 +66,7 @@ export async function BusinessSection() {
                   <h3 className="text-2xl leading-snug">{t(`${c.k}.title`)}</h3>
                   <div className="mt-5 border-t border-ivoire/15">
                     {c.links.map((l) => (
-                      <Link key={l} href="/entreprises" className="group flex items-center justify-between gap-3 border-b border-ivoire/15 py-3.5 text-ivoire">
+                      <Link key={l} href={HREFS[`${c.k}.${l}`]} className="group flex items-center justify-between gap-3 border-b border-ivoire/15 py-3.5 text-ivoire">
                         <span className="min-w-0">
                           <span className="block text-sm font-semibold text-or-300">{t(`${c.k}.links.${l}.label`)}</span>
                           <span className="block truncate text-xs text-ivoire/60">{t(`${c.k}.links.${l}.desc`)}</span>

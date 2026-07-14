@@ -7,6 +7,7 @@ import { Badge } from '@/components/ui/Badge';
 import { Button } from '@/components/ui/Button';
 import { Reveal } from '@/components/motion/Reveal';
 import { pageMetadata } from '@/lib/seo';
+import { CONTACT_HREF } from '@/lib/config';
 
 const ITEMS = ['payments', 'data', 'insights'] as const;
 
@@ -30,7 +31,7 @@ export default async function EnterprisePage({ params }: { params: Promise<{ loc
             <h1 className="mt-4 font-serif text-5xl">{t('title')}</h1>
             <p className="mt-4 text-lg text-sable-700">{t('body')}</p>
             <div className="mt-6">
-              <Button href="mailto:contact@dali.app">{t('contact')}</Button>
+              <Button href={CONTACT_HREF}>{t('contact')}</Button>
             </div>
           </Reveal>
         </Container>

@@ -6,20 +6,43 @@ import { Button } from '@/components/ui/Button';
 import { Reveal } from '@/components/motion/Reveal';
 import { StoreBadges } from './StoreBadges';
 import { cn } from '@/lib/utils';
-import type { Solution } from '@/lib/solutions';
+import { CONTACT_HREF } from '@/lib/config';
+import type { Solution, SolutionFeature } from '@/lib/solutions';
 
-function Visual({ img, photo }: { img: string; photo?: boolean }) {
-  if (photo) {
+const GRADIENTS = [
+  'bg-gradient-to-br from-foret-600 via-foret-800 to-foret-900',
+  'bg-gradient-to-br from-foret-900 via-encre to-foret-800',
+  'bg-gradient-to-b from-foret-700 via-foret-800 to-encre',
+];
+
+function GradientCard({ index }: { index: number }) {
+  return (
+    <div className={cn('relative aspect-[4/3] overflow-hidden rounded-dali-xl', GRADIENTS[index % GRADIENTS.length])} aria-hidden>
+      <div className="pointer-events-none absolute -right-10 -top-10 h-44 w-44 rounded-full bg-or-500/25 blur-3xl" />
+      <div className="pointer-events-none absolute -left-8 bottom-0 h-40 w-40 rounded-full bg-foret-500/25 blur-3xl" />
+      <div className="absolute inset-0 flex items-center justify-center">
+        <svg width="128" height="128" viewBox="0 0 72 72">
+          <path d="M8 44 A28 28 0 0 1 44 8" fill="none" stroke="#F5F0E6" strokeWidth="6" strokeLinecap="round" opacity="0.9" />
+          <path d="M28 64 A28 28 0 0 1 64 28" fill="none" stroke="#C9A961" strokeWidth="6" strokeLinecap="round" />
+        </svg>
+      </div>
+    </div>
+  );
+}
+
+function Visual({ feature, index }: { feature: Pick<SolutionFeature, 'img' | 'photo' | 'gradient'>; index: number }) {
+  if (feature.gradient) return <GradientCard index={index} />;
+  if (feature.photo && feature.img) {
     return (
       <div className="relative aspect-[4/3] overflow-hidden rounded-dali-xl">
-        <Image src={img} alt="" fill sizes="(max-width: 768px) 100vw, 45vw" className="object-cover" />
+        <Image src={feature.img} alt="" fill sizes="(max-width: 768px) 100vw, 45vw" className="object-cover" />
       </div>
     );
   }
   return (
     <div className="flex justify-center rounded-dali-xl bg-foret-50 p-8">
       <div className="relative aspect-[9/19] w-[220px] overflow-hidden rounded-[28px] bg-foret-900 shadow-2xl ring-1 ring-black/5">
-        <Image src={img} alt="" fill sizes="220px" className="object-cover object-top" />
+        {feature.img && <Image src={feature.img} alt="" fill sizes="220px" className="object-cover object-top" />}
       </div>
     </div>
   );
@@ -28,7 +51,7 @@ function Visual({ img, photo }: { img: string; photo?: boolean }) {
 export async function SolutionPage({ solution }: { solution: Solution }) {
   const t = await getTranslations(`solutions.${solution.key}`);
   const cta = solution.business ? (
-    <Button href="mailto:contact@dali.app">{t('ctaBtn')}</Button>
+    <Button href={CONTACT_HREF}>{t('ctaBtn')}</Button>
   ) : (
     <StoreBadges />
   );
@@ -44,7 +67,7 @@ export async function SolutionPage({ solution }: { solution: Solution }) {
               <div className="mt-8">{cta}</div>
             </Reveal>
             <Reveal delay={0.1}>
-              <Visual img={solution.hero} photo={solution.heroPhoto} />
+              <Visual feature={{ img: solution.hero, photo: solution.heroPhoto, gradient: solution.heroGradient }} index={0} />
             </Reveal>
           </div>
         </Container>
@@ -58,7 +81,7 @@ export async function SolutionPage({ solution }: { solution: Solution }) {
               <p className="mt-4 max-w-md text-lg text-sable-700">{t(`features.${f.k}.body`)}</p>
             </Reveal>
             <Reveal delay={0.1} className={cn(i % 2 === 1 && 'md:order-1')}>
-              <Visual img={f.img} photo={f.photo} />
+              <Visual feature={f} index={i} />
             </Reveal>
           </Container>
         </section>
@@ -71,7 +94,7 @@ export async function SolutionPage({ solution }: { solution: Solution }) {
             <p className="mx-auto mt-4 max-w-xl text-ivoire/80">{t('cta.body')}</p>
             <div className="mt-8 flex justify-center">
               {solution.business ? (
-                <Button variant="secondary" href="mailto:contact@dali.app">{t('ctaBtn')}</Button>
+                <Button variant="secondary" href={CONTACT_HREF}>{t('ctaBtn')}</Button>
               ) : (
                 <StoreBadges className="justify-center" />
               )}

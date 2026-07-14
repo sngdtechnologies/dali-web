@@ -57,21 +57,21 @@ export function getNavMenus(t: TFn): NavMenu[] {
         {
           title: t(m('solutions.payments.title')), tagline: t(m('solutions.payments.tagline')),
           items: [
-            item(m('solutions.payments.i1'), '/entreprises', icons.transfer),
-            item(m('solutions.payments.i2'), '/entreprises', icons.calendar),
+            item(m('solutions.payments.i1'), '/solutions/virement-simplifie', icons.transfer),
+            item(m('solutions.payments.i2'), '/solutions/echeancier-de-paiement', icons.calendar),
           ],
         },
         {
           title: t(m('solutions.data.title')), tagline: t(m('solutions.data.tagline')),
           items: [
-            item(m('solutions.data.i1'), '/entreprises', icons.accounts),
-            item(m('solutions.data.i2'), '/entreprises', icons.wealth),
-            item(m('solutions.data.i3'), '/entreprises', icons.insights),
+            item(m('solutions.data.i1'), '/solutions/solution-aggregation-bancaire', icons.accounts),
+            item(m('solutions.data.i2'), '/solutions/wealth', icons.wealth),
+            item(m('solutions.data.i3'), '/solutions/insights', icons.insights),
           ],
         },
         {
           title: t(m('solutions.observatory.title')), tagline: t(m('solutions.observatory.tagline')),
-          items: [item(m('solutions.observatory.i1'), '/entreprises', icons.study)],
+          items: [item(m('solutions.observatory.i1'), '/solutions/nos-etudes', icons.study)],
         },
       ],
     },

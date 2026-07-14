@@ -89,6 +89,78 @@
         "title": "Ready to see clearly?",
         "body": "Download Dali for free and take control of your finances today."
       }
+    },
+    "virement": {
+      "eyebrow": "Payments",
+      "title": "Bank transfer, simplified",
+      "sub": "Get paid by bank transfer in seconds — no card, no friction. A smooth, secure and low-cost payment experience.",
+      "ctaBtn": "Contact us",
+      "features": {
+        "instant": { "title": "Paid in seconds", "body": "The customer confirms from their banking app: the payment is confirmed instantly, with no card entry." },
+        "frictionless": { "title": "Zero friction for your customers", "body": "No numbers to retype, no useless steps — a clear payment journey from first to last screen." },
+        "cost": { "title": "Costs under control", "body": "Transfers cost far less than cards, with no compromise on security." }
+      },
+      "cta": { "title": "Ready to simplify collection?", "body": "Let's talk about your use case and add Dali transfers to your flow." }
+    },
+    "echeancier": {
+      "eyebrow": "Payments",
+      "title": "Payment scheduling",
+      "sub": "Let your customers pay in installments, at their own pace. Flexible, transparent payments with no constraints.",
+      "ctaBtn": "Contact us",
+      "features": {
+        "split": { "title": "Pay in installments", "body": "Spread the amount over several due dates and remove the barrier of paying all at once." },
+        "flexible": { "title": "No constraints", "body": "Schedules tailored to each customer, adjustable to your business rules." },
+        "transparent": { "title": "Full transparency", "body": "Every installment is clear, notified and tracked — no bad surprises." }
+      },
+      "cta": { "title": "Smooth out your payments", "body": "Let's explore how Dali scheduling fits into your offering." }
+    },
+    "aggregation": {
+      "eyebrow": "Data & API",
+      "title": "Bank aggregation",
+      "sub": "Access your users' accounts securely through a single API. Every bank, one integration.",
+      "ctaBtn": "Contact us",
+      "features": {
+        "connect": { "title": "Every bank, one API", "body": "Connect your users' accounts whatever their bank, with coverage that keeps expanding." },
+        "secure": { "title": "100% secure", "body": "Regulated, encrypted access that respects user consent at every step." },
+        "integrate": { "title": "Fast integration", "body": "A clear, documented API to plug aggregation into your product within days." }
+      },
+      "cta": { "title": "Bring your data to life", "body": "Contact us for access to the Dali aggregation API." }
+    },
+    "wealth": {
+      "eyebrow": "Data & API",
+      "title": "Wealth — your wealth data, valued",
+      "sub": "Give your users a complete, real-time view of their wealth, with every asset in one place.",
+      "ctaBtn": "Contact us",
+      "features": {
+        "vision": { "title": "A complete wealth view", "body": "Accounts, savings, investments: aggregate the entire portfolio into a single view." },
+        "enriched": { "title": "Enriched data", "body": "Each asset is structured, categorized and valued for analysis you can use right away." },
+        "realtime": { "title": "In real time", "body": "Wealth that updates continuously, for decisions made at the right moment." }
+      },
+      "cta": { "title": "Value your clients' wealth", "body": "Let's talk about integrating Wealth into your financial products." }
+    },
+    "insights": {
+      "eyebrow": "Data & API",
+      "title": "Insights",
+      "sub": "Turn raw statements into clear data: readable labels, reliable categories and detected recurrences.",
+      "ctaBtn": "Contact us",
+      "features": {
+        "labels": { "title": "Clarified bank labels", "body": "Cryptic entries become readable merchant names, recognizable at a glance." },
+        "categorize": { "title": "Automatic categorization", "body": "Every transaction is sorted into the right category, with no manual work." },
+        "recurring": { "title": "Recurrences detected", "body": "Subscriptions and recurring charges are identified automatically to plan ahead." }
+      },
+      "cta": { "title": "Enrich your financial data", "body": "Contact us to integrate Insights into your platform." }
+    },
+    "etudes": {
+      "eyebrow": "Observatory",
+      "title": "Our studies",
+      "sub": "Anticipate your customers' trends and expectations with our analysis of financial behavior.",
+      "ctaBtn": "Contact us",
+      "features": {
+        "trends": { "title": "Consumption trends", "body": "Decode how spending, saving and financial habits evolve." },
+        "exclusive": { "title": "Exclusive analysis", "body": "Original studies drawn from real, aggregated and anonymized data." },
+        "decisions": { "title": "To guide your decisions", "body": "Concrete insights to steer your strategy and your products." }
+      },
+      "cta": { "title": "Stay one step ahead", "body": "Contact us to access our studies and analysis." }
     }
   },
   "showcase": {

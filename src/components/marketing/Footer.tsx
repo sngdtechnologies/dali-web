@@ -29,10 +29,10 @@ export function Footer() {
     {
       title: t('colSolutions'),
       links: [
-        { label: t('payments'), href: '/entreprises' },
-        { label: t('data'), href: '/entreprises' },
-        { label: t('insights'), href: '/entreprises' },
-        { label: t('studies'), href: '/entreprises' },
+        { label: t('payments'), href: '/solutions/virement-simplifie' },
+        { label: t('data'), href: '/solutions/solution-aggregation-bancaire' },
+        { label: t('insights'), href: '/solutions/insights' },
+        { label: t('studies'), href: '/solutions/nos-etudes' },
       ],
     },
     {
