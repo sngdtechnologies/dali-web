@@ -104,7 +104,7 @@ export function getNavMenus(t: TFn): NavMenu[] {
         item(m('about.i3'), '#', icons.shield),
         item(m('about.i4'), '#', icons.event),
       ],
-      promo: { title: t(m('about.promo.title')), desc: t(m('about.promo.desc')), badge: t(m('about.promo.badge')), href: '/entreprises' },
+      promo: { title: t(m('about.promo.title')), desc: t(m('about.promo.desc')), badge: t(m('about.promo.badge')), href: '/entreprises', image: '/menu/about.webp' },
     },
   ];
 }
