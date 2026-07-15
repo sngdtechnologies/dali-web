@@ -145,6 +145,19 @@
       "eyebrow": "Patrimoine",
       "title": "Votre patrimoine, en un coup d'œil",
       "sub": "Comptes, épargne, investissements, biens immobiliers, tontines : suivez la valeur totale de ce que vous possédez, réévaluée à tout moment.",
+      "dashLabel": "Patrimoine total",
+      "dashActifs": "actifs",
+      "dashGain": "+184 500 FCFA ce mois-ci",
+      "assetsTitle": "Tous vos actifs, réunis",
+      "assetsSub": "Des liquidités à l'immobilier, chaque type de bien trouve sa place — avec ses justificatifs et sa valeur réévaluable.",
+      "benefitsTitle": "Gardez le cap",
+      "classes": {
+        "realestate": { "label": "Immobilier", "desc": "Terrains et biens, titre foncier à l'appui" },
+        "investments": { "label": "Investissements", "desc": "BVMAC, OPCVM, obligations, crypto" },
+        "tontine": { "label": "Tontine", "desc": "Épargne collective et solidaire" },
+        "savings": { "label": "Épargne", "desc": "Vos objectifs et coussins de sécurité" },
+        "cash": { "label": "Liquidités", "desc": "MoMo, Orange Money et comptes bancaires" }
+      },
       "features": {
         "total": { "title": "Votre patrimoine total", "body": "Additionnez tous vos actifs — liquidités, placements, immobilier, tontine — pour une vision nette de votre richesse." },
         "assets": { "title": "Chaque actif à sa juste valeur", "body": "Ajoutez un terrain, un placement BVMAC/OPCVM, une crypto ou une part de tontine, avec ses justificatifs, et réévaluez sa valeur quand vous voulez." },

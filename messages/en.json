@@ -145,6 +145,19 @@
       "eyebrow": "Wealth",
       "title": "Your wealth, at a glance",
       "sub": "Accounts, savings, investments, real estate, tontines: track the total value of what you own, revalued anytime.",
+      "dashLabel": "Total wealth",
+      "dashActifs": "assets",
+      "dashGain": "+184,500 FCFA this month",
+      "assetsTitle": "Every asset, together",
+      "assetsSub": "From cash to real estate, each kind of asset has its place — with supporting documents and a value you can revalue.",
+      "benefitsTitle": "Stay on course",
+      "classes": {
+        "realestate": { "label": "Real estate", "desc": "Land and property, backed by title deeds" },
+        "investments": { "label": "Investments", "desc": "BVMAC, mutual funds, bonds, crypto" },
+        "tontine": { "label": "Tontine", "desc": "Collective, solidarity-based savings" },
+        "savings": { "label": "Savings", "desc": "Your goals and safety cushions" },
+        "cash": { "label": "Cash", "desc": "MoMo, Orange Money and bank accounts" }
+      },
       "features": {
         "total": { "title": "Your total wealth", "body": "Add up every asset — cash, investments, property, tontine — for a clear picture of your net worth." },
         "assets": { "title": "Every asset at its true value", "body": "Add land, a BVMAC/OPCVM investment, crypto or a tontine share, with supporting documents, and revalue it whenever you want." },

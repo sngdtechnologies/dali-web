@@ -5,6 +5,7 @@ import { routing } from '@/i18n/routing';
 import { SOLUTIONS, solutionSlugs } from '@/lib/solutions';
 import { SolutionPage } from '@/components/marketing/SolutionPage';
 import { VirementPage } from '@/components/marketing/VirementPage';
+import { WealthPage } from '@/components/marketing/WealthPage';
 import { pageMetadata } from '@/lib/seo';
 
 export function generateStaticParams() {
@@ -25,5 +26,6 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
   const solution = SOLUTIONS[slug];
   if (!solution) notFound();
   if (slug === 'virement-simplifie') return <VirementPage />;
+  if (slug === 'wealth') return <WealthPage />;
   return <SolutionPage solution={solution} />;
 }
