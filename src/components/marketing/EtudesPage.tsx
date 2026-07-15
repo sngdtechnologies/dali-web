@@ -5,7 +5,7 @@ import { Reveal } from '@/components/motion/Reveal';
 import { StoreBadges } from './StoreBadges';
 import { SolutionCta } from './solution/SolutionCta';
 import { FeatureCards } from './solution/FeatureCards';
-import { PanelDecor } from './solution/PanelDecor';
+import { FloatingMock } from './solution/FloatingMock';
 
 const IP = { viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 1.7, strokeLinecap: 'round' as const, strokeLinejoin: 'round' as const, 'aria-hidden': true };
 
@@ -19,9 +19,8 @@ const BARS = [38, 62, 48, 80, 56, 72];
 
 function ReportCard({ t }: { t: Awaited<ReturnType<typeof getTranslations>> }) {
   return (
-    <div className="relative flex justify-center overflow-hidden rounded-dali-xl bg-gradient-to-br from-foret-700 via-foret-800 to-foret-900 p-7 sm:p-10">
-      <PanelDecor tone="dark" />
-      <div className="relative z-10 w-full max-w-sm rounded-dali-lg bg-white p-6 shadow-2xl">
+    <FloatingMock>
+      <div className="w-full max-w-sm rounded-dali-lg bg-white p-6 shadow-2xl">
         <div className="flex items-center justify-between">
           <div className="text-sm font-semibold text-encre">{t('reportTitle')}</div>
           <span className="rounded-dali-full bg-foret-50 px-2.5 py-0.5 text-xs font-medium text-foret-700">{t('reportPeriod')}</span>
@@ -33,7 +32,7 @@ function ReportCard({ t }: { t: Awaited<ReturnType<typeof getTranslations>> }) {
         </div>
         <div className="mt-3 h-px w-full bg-encre/10" />
       </div>
-    </div>
+    </FloatingMock>
   );
 }
 

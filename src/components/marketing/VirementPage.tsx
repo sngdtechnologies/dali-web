@@ -3,7 +3,7 @@ import { Container } from '@/components/ui/Container';
 import { Badge } from '@/components/ui/Badge';
 import { Reveal } from '@/components/motion/Reveal';
 import { StoreBadges } from './StoreBadges';
-import { PanelDecor } from './solution/PanelDecor';
+import { FloatingMock } from './solution/FloatingMock';
 
 const IP = { viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 1.7, strokeLinecap: 'round' as const, strokeLinejoin: 'round' as const, 'aria-hidden': true };
 
@@ -16,9 +16,8 @@ const BENEFIT_ICONS: Record<string, React.ReactNode> = {
 function PhoneMock({ title, meta, callLabel }: { title: string; meta: string; callLabel: string }) {
   const keys = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '*', '0', '#'];
   return (
-    <div className="relative flex justify-center overflow-hidden rounded-dali-xl bg-gradient-to-br from-foret-600 via-foret-800 to-foret-900 p-8 sm:p-12">
-      <PanelDecor tone="dark" />
-      <div className="relative z-10 w-[236px] rounded-[40px] bg-encre p-2.5 shadow-2xl ring-1 ring-black/10">
+    <FloatingMock>
+      <div className="w-[236px] rounded-[40px] bg-encre p-2.5 shadow-2xl ring-1 ring-black/10">
         <div className="overflow-hidden rounded-[32px] bg-white">
           <div className="mx-auto mt-2.5 h-1.5 w-14 rounded-full bg-encre/15" aria-hidden />
           <div className="px-5 pb-6 pt-4 text-center">
@@ -39,7 +38,7 @@ function PhoneMock({ title, meta, callLabel }: { title: string; meta: string; ca
           </div>
         </div>
       </div>
-    </div>
+    </FloatingMock>
   );
 }
 

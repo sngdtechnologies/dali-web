@@ -5,7 +5,7 @@ import { Reveal } from '@/components/motion/Reveal';
 import { StoreBadges } from './StoreBadges';
 import { SolutionCta } from './solution/SolutionCta';
 import { FeatureCards } from './solution/FeatureCards';
-import { PanelDecor } from './solution/PanelDecor';
+import { FloatingMock } from './solution/FloatingMock';
 
 const SOURCES = [
   { name: 'MTN MoMo', value: '620 000 FCFA', hex: '#C9A961' },
@@ -15,9 +15,8 @@ const SOURCES = [
 
 function SourcesCard({ t }: { t: Awaited<ReturnType<typeof getTranslations>> }) {
   return (
-    <div className="relative overflow-hidden rounded-dali-xl bg-foret-50 p-5 sm:p-7">
-      <PanelDecor tone="light" />
-      <div className="relative z-10 rounded-dali-lg border border-encre/10 bg-white p-6 shadow-xl">
+    <FloatingMock>
+      <div className="w-full rounded-dali-lg border border-encre/10 bg-white p-6 shadow-xl">
         <div className="text-xs uppercase tracking-wide text-sable-700">{t('totalLabel')}</div>
         <div className="mt-1 font-serif text-3xl font-medium tabular-nums text-encre">1 245 000 FCFA</div>
         <div className="mt-5 space-y-2.5">
@@ -32,7 +31,7 @@ function SourcesCard({ t }: { t: Awaited<ReturnType<typeof getTranslations>> }) 
           ))}
         </div>
       </div>
-    </div>
+    </FloatingMock>
   );
 }
 

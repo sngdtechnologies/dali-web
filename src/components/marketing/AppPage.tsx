@@ -4,19 +4,21 @@ import { Badge } from '@/components/ui/Badge';
 import { Reveal } from '@/components/motion/Reveal';
 import { StoreBadges } from './StoreBadges';
 import { PhoneFrame } from './solution/PhoneFrame';
-import { PanelDecor } from './solution/PanelDecor';
+import { FloatingMock } from './solution/FloatingMock';
 import { SolutionCta } from './solution/SolutionCta';
 import { DaliScoreGauge } from './DaliScoreGauge';
 import { cn } from '@/lib/utils';
 
-function GradientPhone({ src, width = 220 }: { src: string; width?: number }) {
+function PhoneChips() {
   return (
-    <div className="relative flex justify-center overflow-hidden rounded-dali-xl bg-gradient-to-br from-foret-600 via-foret-800 to-foret-900 p-8 sm:p-12">
-      <PanelDecor tone="dark" />
-      <div className="relative z-10">
-        <PhoneFrame src={src} width={width} />
+    <>
+      <div className="absolute left-0 top-12 z-20 hidden items-center gap-2 rounded-dali-md bg-white px-3 py-2 shadow-xl ring-1 ring-encre/5 sm:flex" aria-hidden>
+        <span className="flex h-7 w-7 items-center justify-center rounded-full bg-foret-50 text-foret-700">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="6" width="18" height="13" rx="2" /><path d="M3 10h18M16 15h2" /></svg>
+        </span>
+        <span className="font-mono text-sm font-semibold tabular-nums text-encre">2 458 200 FCFA</span>
       </div>
-      <div className="pointer-events-none absolute right-3 top-10 z-20 hidden rounded-dali-md bg-white/95 p-2.5 shadow-lg backdrop-blur sm:block" aria-hidden>
+      <div className="absolute -right-1 bottom-14 z-20 hidden rounded-dali-md bg-white px-3 py-2 shadow-xl ring-1 ring-encre/5 sm:block" aria-hidden>
         <div className="flex items-center gap-1.5">
           <span className="h-1.5 w-1.5 rounded-full bg-or-500" />
           <span className="font-mono text-xs font-semibold tabular-nums text-serenite">+12 %</span>
@@ -25,7 +27,15 @@ function GradientPhone({ src, width = 220 }: { src: string; width?: number }) {
           <path d="M0 16 C12 6 22 14 34 8 S52 2 60 6" fill="none" stroke="#3A6B4E" strokeWidth="2" strokeLinecap="round" />
         </svg>
       </div>
-    </div>
+    </>
+  );
+}
+
+function FloatingPhone({ src, width = 220, rich = false }: { src: string; width?: number; rich?: boolean }) {
+  return (
+    <FloatingMock overlay={rich ? <PhoneChips /> : undefined}>
+      <PhoneFrame src={src} width={width} />
+    </FloatingMock>
   );
 }
 
@@ -38,7 +48,7 @@ function ScreenRow({ id, src, side, title, body }: { id?: string; src: string; s
           <p className="mt-4 max-w-md text-lg text-sable-700">{body}</p>
         </Reveal>
         <Reveal delay={0.1} className={cn(side === 'right' && 'md:order-1')}>
-          <GradientPhone src={src} />
+          <FloatingPhone src={src} />
         </Reveal>
       </Container>
     </section>
@@ -59,7 +69,7 @@ export async function AppPage() {
               <div className="mt-8"><StoreBadges /></div>
             </Reveal>
             <Reveal delay={0.1}>
-              <GradientPhone src="/screens/comptes.webp" width={230} />
+              <FloatingPhone src="/screens/comptes.webp" width={230} rich />
             </Reveal>
           </div>
         </Container>

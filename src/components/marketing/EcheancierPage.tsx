@@ -5,7 +5,7 @@ import { Reveal } from '@/components/motion/Reveal';
 import { StoreBadges } from './StoreBadges';
 import { SolutionCta } from './solution/SolutionCta';
 import { FeatureCards } from './solution/FeatureCards';
-import { PanelDecor } from './solution/PanelDecor';
+import { FloatingMock } from './solution/FloatingMock';
 
 const IP = { viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 1.7, strokeLinecap: 'round' as const, strokeLinejoin: 'round' as const, 'aria-hidden': true };
 
@@ -18,9 +18,8 @@ const TYPES: { k: string; icon: React.ReactNode }[] = [
 
 function GoalCard({ t }: { t: Awaited<ReturnType<typeof getTranslations>> }) {
   return (
-    <div className="relative overflow-hidden rounded-dali-xl bg-foret-50 p-5 sm:p-7">
-      <PanelDecor tone="light" />
-      <div className="relative z-10 rounded-dali-lg border border-encre/10 bg-white p-6 shadow-xl">
+    <FloatingMock>
+      <div className="w-full rounded-dali-lg border border-encre/10 bg-white p-6 shadow-xl">
         <div className="flex items-start justify-between">
           <div>
             <div className="text-xs uppercase tracking-wide text-sable-700">{t('mock.type')}</div>
@@ -40,7 +39,7 @@ function GoalCard({ t }: { t: Awaited<ReturnType<typeof getTranslations>> }) {
           <span className="text-sable-700">{t('mock.etaLabel')} · {t('mock.eta')}</span>
         </div>
       </div>
-    </div>
+    </FloatingMock>
   );
 }
 
