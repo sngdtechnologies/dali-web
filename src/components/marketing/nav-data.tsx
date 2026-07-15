@@ -79,11 +79,11 @@ export function getNavMenus(t: TFn): NavMenu[] {
     {
       key: 'usecases', label: t('usecases'), layout: 'grid',
       items: [
-        item(m('usecases.i1'), '/fonctionnalites', icons.budget),
-        item(m('usecases.i2'), '/fonctionnalites', icons.accounts),
-        item(m('usecases.i3'), '/fonctionnalites', icons.transfer),
-        item(m('usecases.i4'), '/fonctionnalites', icons.target),
-        item(m('usecases.i5'), '/entreprises', icons.qr),
+        item(m('usecases.i1'), '/solutions/app', icons.budget),
+        item(m('usecases.i2'), '/solutions/solution-aggregation-bancaire', icons.accounts, soon),
+        item(m('usecases.i3'), '/solutions/app', icons.transfer),
+        item(m('usecases.i4'), '/solutions/echeancier-de-paiement', icons.target),
+        item(m('usecases.i5'), '/solutions/virement-simplifie', icons.qr),
         item(m('usecases.i6'), '/entreprises', icons.cart),
       ],
       promo: { title: t(m('usecases.promo.title')), desc: t(m('usecases.promo.desc')), badge: t(m('usecases.promo.badge')), href: '/entreprises', image: '/menu/usecases.webp' },

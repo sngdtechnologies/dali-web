@@ -3,19 +3,19 @@ import { Section } from '@/components/ui/Section';
 import { Container } from '@/components/ui/Container';
 import { Reveal } from '@/components/motion/Reveal';
 import { Link } from '@/i18n/routing';
-import Image from 'next/image';
 import { QrCode } from './QrCode';
+import { PhoneFrame } from './solution/PhoneFrame';
 import { cn } from '@/lib/utils';
 
 const APP_URL = 'https://dali.app';
 
-const CARDS: { k: string; tint: string; img: string }[] = [
-  { k: 'aggregation', tint: 'bg-sable-100', img: 'comptes' },
-  { k: 'sms', tint: 'bg-or-100', img: 'depenses' },
-  { k: 'ai', tint: 'bg-foret-800', img: 'assistant' },
-  { k: 'score', tint: 'bg-foret-50', img: 'score' },
-  { k: 'pay', tint: 'bg-sable-200', img: 'paiement' },
-  { k: 'budget', tint: 'bg-foret-100', img: 'budget' },
+const CARDS: { k: string; tint: string; img: string; href: string }[] = [
+  { k: 'aggregation', tint: 'bg-sable-100', img: 'comptes', href: '/solutions/solution-aggregation-bancaire' },
+  { k: 'sms', tint: 'bg-or-100', img: 'depenses', href: '/solutions/app' },
+  { k: 'ai', tint: 'bg-foret-100', img: 'assistant', href: '/solutions/app#assistant-ia' },
+  { k: 'score', tint: 'bg-foret-50', img: 'score', href: '/solutions/app#dali-score' },
+  { k: 'pay', tint: 'bg-sable-200', img: 'paiement', href: '/solutions/virement-simplifie' },
+  { k: 'budget', tint: 'bg-foret-100', img: 'budget', href: '/solutions/app' },
 ];
 
 function LabMark() {
@@ -52,21 +52,18 @@ export async function AppShowcase() {
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {CARDS.flatMap((c) => [
             <Reveal key={`${c.k}-img`}>
-              <div className={cn('relative aspect-[4/5] overflow-hidden rounded-dali-lg', c.tint)} aria-hidden>
-                <Image
-                  src={`/screens/${c.img}.webp`}
-                  alt=""
-                  fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 300px"
-                  className="object-cover object-top"
-                />
-              </div>
+              <Link href={c.href} aria-label={t(`cards.${c.k}.title`)} className={cn('flex h-full items-center justify-center overflow-hidden rounded-dali-lg p-6 sm:p-8', c.tint)}>
+                <PhoneFrame src={`/screens/${c.img}.webp`} width={150} />
+              </Link>
             </Reveal>,
             <Reveal key={`${c.k}-text`}>
-              <div className="flex h-full flex-col justify-center rounded-dali-lg bg-sable-50 p-7">
+              <Link href={c.href} className="group flex h-full flex-col justify-center rounded-dali-lg bg-sable-50 p-7 transition-colors hover:bg-foret-50">
                 <h3 className="text-xl leading-snug text-encre">{t(`cards.${c.k}.title`)}</h3>
                 <p className="mt-3 text-sm text-sable-700">{t(`cards.${c.k}.body`)}</p>
-              </div>
+                <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-foret-700">
+                  {t('learnMore')} <span className="transition-transform group-hover:translate-x-0.5">→</span>
+                </span>
+              </Link>
             </Reveal>,
           ])}
         </div>
