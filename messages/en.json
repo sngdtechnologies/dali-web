@@ -122,6 +122,16 @@
       "eyebrow": "Savings",
       "title": "Your savings goals and building projects",
       "sub": "Set money aside for what matters — school fees, loan repayment, travel — and track your building projects from the first stone to the last contribution.",
+      "mock": { "type": "Building project", "name": "Family home", "builtLabel": "Built at", "savedLabel": "Saved", "monthly": "500,000 FCFA / month", "etaLabel": "Completion", "eta": "March 2027" },
+      "typesTitle": "For every project",
+      "typesSub": "Set a goal, pick its type, and let Dali pace your saving.",
+      "types": {
+        "education": { "label": "Education", "desc": "School fees, training, supplies" },
+        "chantier": { "label": "Building", "desc": "Construction, renovation" },
+        "travel": { "label": "Travel", "desc": "Tickets, stay, extras" },
+        "repay": { "label": "Repayment", "desc": "Loans and debts to clear" }
+      },
+      "benefitsTitle": "Saving that sticks",
       "features": {
         "goals": { "title": "Goals that fit you", "body": "Education, travel, repayment or a free-form project: set an amount, a deadline, and let Dali work out the pace." },
         "chantier": { "title": "Track your building projects", "body": "Construction, renovation: follow the money you put in and watch your project reach \"X% built\" as contributions add up." },
@@ -134,6 +144,10 @@
       "soon": "Soon",
       "title": "Every account, one view",
       "sub": "Bring your MTN MoMo, Orange Money and bank accounts together into a single, synchronized view. Coming soon to Dali.",
+      "totalLabel": "Total balance",
+      "sourcesTitle": "Every source, one view",
+      "sourcesSub": "MoMo, Orange Money, bank: Dali brings your balances into one clear total, kept up to date on its own.",
+      "benefitsTitle": "What's coming",
       "features": {
         "sources": { "title": "All your sources together", "body": "MoMo, Orange Money, bank: connect each source and track your total balance at a glance." },
         "sync": { "title": "Continuously synced", "body": "Your balances and transactions update automatically, with no re-entry." },
@@ -169,6 +183,11 @@
       "eyebrow": "Insights",
       "title": "Insights that move you forward",
       "sub": "Dali analyzes your spending and habits to deliver clear, personalized observations grounded in your real data.",
+      "obsLabel": "Observation",
+      "sugLabel": "Suggestion",
+      "insight1": { "text": "You spent 32% less on restaurants this month.", "sug": "I can set aside these 18,000 FCFA for your building project." },
+      "insight2": { "text": "Your video subscription is up 15% since January.", "sug": "Want me to warn you before the next charge?" },
+      "benefitsTitle": "Your data, finally talking",
       "features": {
         "observe": { "title": "What your spending reveals", "body": "Dali spots trends in your spending and explains them simply, month after month." },
         "personal": { "title": "Personalized, never generic", "body": "Every observation starts from your real transactions — no canned advice." },
@@ -181,6 +200,15 @@
       "soon": "Soon",
       "title": "Our studies",
       "sub": "Coming soon: our analysis of financial trends and behavior, to inform your decisions.",
+      "reportTitle": "Dali Financial Barometer",
+      "reportPeriod": "Q1 2027",
+      "topicsTitle": "What we'll explore",
+      "topics": {
+        "spending": { "label": "Spending", "desc": "Where and how people spend day to day" },
+        "savings": { "label": "Savings", "desc": "Goals, tontines and safety cushions" },
+        "momo": { "label": "Mobile Money", "desc": "Payment usage and trends" }
+      },
+      "benefitsTitle": "Coming soon",
       "features": {
         "trends": { "title": "Consumption trends", "body": "Decode how spending, saving and financial habits evolve." },
         "exclusive": { "title": "Exclusive analysis", "body": "Original studies drawn from real, aggregated and anonymized data." },

@@ -122,6 +122,16 @@
       "eyebrow": "Épargne",
       "title": "Vos objectifs d'épargne et vos chantiers",
       "sub": "Mettez de l'argent de côté pour ce qui compte — scolarité, remboursement, voyage — et suivez l'avancement de vos chantiers, de la première pierre au dernier versement.",
+      "mock": { "type": "Chantier", "name": "Maison familiale", "builtLabel": "Bâti à", "savedLabel": "Épargné", "monthly": "500 000 FCFA / mois", "etaLabel": "Aboutissement", "eta": "mars 2027" },
+      "typesTitle": "Pour tous vos projets",
+      "typesSub": "Fixez un objectif, choisissez son type, et laissez Dali rythmer votre épargne.",
+      "types": {
+        "education": { "label": "Éducation", "desc": "Scolarité, formation, fournitures" },
+        "chantier": { "label": "Chantier", "desc": "Construction, rénovation" },
+        "travel": { "label": "Voyage", "desc": "Billets, séjour, imprévus" },
+        "repay": { "label": "Remboursement", "desc": "Prêts et dettes à solder" }
+      },
+      "benefitsTitle": "Une épargne qui tient",
       "features": {
         "goals": { "title": "Des objectifs qui vous ressemblent", "body": "Éducation, voyage, remboursement ou projet libre : fixez un montant, une échéance, et laissez Dali calculer le rythme." },
         "chantier": { "title": "Suivez vos chantiers", "body": "Construction, rénovation : suivez l'argent injecté et voyez votre chantier « bâti à X % » au fil des versements." },
@@ -134,6 +144,10 @@
       "soon": "Bientôt",
       "title": "Tous vos comptes, une seule vue",
       "sub": "Réunissez vos sources MTN MoMo, Orange Money et vos comptes bancaires dans une vue unique et synchronisée. Bientôt disponible dans Dali.",
+      "totalLabel": "Solde global",
+      "sourcesTitle": "Toutes vos sources, une seule vue",
+      "sourcesSub": "MoMo, Orange Money, banque : Dali réunit vos soldes en un total clair, tenu à jour tout seul.",
+      "benefitsTitle": "Ce qui vous attend",
       "features": {
         "sources": { "title": "Toutes vos sources réunies", "body": "MoMo, Orange Money, banque : connectez chaque source et suivez votre solde global d'un coup d'œil." },
         "sync": { "title": "Synchronisé en continu", "body": "Vos soldes et transactions se mettent à jour automatiquement, sans ressaisie." },
@@ -169,6 +183,11 @@
       "eyebrow": "Insights",
       "title": "Des observations qui font avancer",
       "sub": "Dali analyse vos dépenses et vos habitudes pour vous livrer des observations claires et personnalisées, ancrées dans vos données réelles.",
+      "obsLabel": "Observation",
+      "sugLabel": "Suggestion",
+      "insight1": { "text": "Tu as dépensé 32 % de moins en restaurants ce mois-ci.", "sug": "Je peux mettre ces 18 000 FCFA de côté pour ton chantier." },
+      "insight2": { "text": "Ton abonnement vidéo a augmenté de 15 % depuis janvier.", "sug": "Veux-tu que je te prévienne au prochain prélèvement ?" },
+      "benefitsTitle": "Vos données, enfin parlantes",
       "features": {
         "observe": { "title": "Ce que révèlent vos dépenses", "body": "Dali repère les tendances de vos dépenses et vous les explique simplement, mois après mois." },
         "personal": { "title": "Personnalisé, jamais générique", "body": "Chaque observation part de vos vraies transactions — pas de conseils tout faits." },
@@ -181,6 +200,15 @@
       "soon": "Bientôt",
       "title": "Nos études",
       "sub": "Bientôt : nos analyses des tendances et des comportements financiers, pour éclairer vos décisions.",
+      "reportTitle": "Baromètre financier Dali",
+      "reportPeriod": "T1 2027",
+      "topicsTitle": "Ce que nous explorerons",
+      "topics": {
+        "spending": { "label": "Consommation", "desc": "Où et comment on dépense au quotidien" },
+        "savings": { "label": "Épargne", "desc": "Objectifs, tontines et coussins de sécurité" },
+        "momo": { "label": "Mobile Money", "desc": "Usages et tendances des paiements" }
+      },
+      "benefitsTitle": "Bientôt disponible",
       "features": {
         "trends": { "title": "Les tendances de consommation", "body": "Décryptez l'évolution des dépenses, de l'épargne et des usages financiers." },
         "exclusive": { "title": "Des analyses exclusives", "body": "Des études inédites issues de données réelles, agrégées et anonymisées." },
