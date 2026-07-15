@@ -12,12 +12,12 @@
           "title": "Application Dali", "tagline": "Vos meilleures décisions financières, chaque jour",
           "i1": { "label": "L'app Dali", "desc": "Le suivi automatique de vos comptes et dépenses" },
           "i2": { "label": "Assistant IA", "desc": "Un conseiller financier dans votre poche" },
-          "i3": { "label": "Dali-Score", "desc": "Votre santé financière, de 0 à 1000" }
+          "i3": { "label": "Dali-Score", "desc": "Votre santé financière, de 0 à 1000" },
+          "i4": { "label": "Objectifs & chantiers", "desc": "Épargnez pour vos projets et suivez vos chantiers" }
         },
         "payments": {
-          "title": "Paiements", "tagline": "Optimisez vos paiements, accélérez votre croissance",
-          "i1": { "label": "Virement simplifié", "desc": "Le paiement par virement sécurisé en quelques clics" },
-          "i2": { "label": "Objectifs & chantiers", "desc": "Épargnez pour vos projets et suivez vos chantiers" }
+          "title": "Paiements", "tagline": "Vos paiements Mobile Money, simplifiés",
+          "i1": { "label": "Virement simplifié", "desc": "Payez en Mobile Money, code USSD pré-rempli" }
         },
         "data": {
           "title": "Données & API", "tagline": "Donnez de l'intelligence à vos données financières",
@@ -95,10 +95,26 @@
       "eyebrow": "Paiements",
       "title": "Vos virements Mobile Money, préparés d'un geste",
       "sub": "Initiez un paiement MTN MoMo ou Orange Money depuis Dali : l'app compose pour vous le code USSD, prêt à envoyer. Dali ne touche jamais à votre argent.",
+      "mockTitle": "Virement Mobile Money",
+      "mockMeta": "MTN MoMo · 5 000 FCFA",
+      "call": "Appel",
+      "how": "Comment ça marche",
+      "howSub": "Du montant au reçu, en quatre étapes.",
+      "steps": {
+        "s1": "Choisissez le bénéficiaire et le montant",
+        "s2": "Dali compose le code USSD exact",
+        "s3": "Validez dans votre app d'appel",
+        "s4": "Dali catégorise au retour du SMS"
+      },
+      "benefitsTitle": "Pourquoi c'est plus simple",
       "features": {
         "prepare": { "title": "Le bon code, pré-rempli", "body": "Choisissez le bénéficiaire et le montant : Dali prépare le code USSD (*126*1*…) exact, sans erreur de saisie." },
         "dialer": { "title": "Un tap, et c'est parti", "body": "Dali ouvre votre application d'appel avec le code déjà saisi — il ne reste qu'à valider avec votre code secret opérateur." },
         "track": { "title": "Suivi automatique", "body": "Quand la transaction revient par SMS, Dali la détecte et la range dans la bonne catégorie, sans rien saisir." }
+      },
+      "trust": {
+        "title": "Vos données restent chez vous",
+        "body": "Dali lit vos SMS de transaction localement, sur votre téléphone. Rien ne part sans votre accord, et l'argent transite uniquement par votre opérateur."
       },
       "cta": { "title": "Payez plus vite, sans erreur", "body": "Téléchargez Dali et préparez vos virements MoMo et Orange Money en quelques secondes." }
     },

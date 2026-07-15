@@ -53,13 +53,13 @@ export function getNavMenus(t: TFn): NavMenu[] {
             item(m('solutions.app.i1'), '/solutions/app', icons.app),
             item(m('solutions.app.i2'), '/solutions/app#assistant-ia', icons.ai),
             item(m('solutions.app.i3'), '/solutions/app#dali-score', icons.score),
+            item(m('solutions.app.i4'), '/solutions/echeancier-de-paiement', icons.target),
           ],
         },
         {
           title: t(m('solutions.payments.title')), tagline: t(m('solutions.payments.tagline')),
           items: [
             item(m('solutions.payments.i1'), '/solutions/virement-simplifie', icons.transfer),
-            item(m('solutions.payments.i2'), '/solutions/echeancier-de-paiement', icons.calendar),
           ],
         },
         {

@@ -12,12 +12,12 @@
           "title": "Dali app", "tagline": "Your best financial decisions, every day",
           "i1": { "label": "The Dali app", "desc": "Automatic tracking of your accounts and spending" },
           "i2": { "label": "AI assistant", "desc": "A financial advisor in your pocket" },
-          "i3": { "label": "Dali-Score", "desc": "Your financial health, from 0 to 1000" }
+          "i3": { "label": "Dali-Score", "desc": "Your financial health, from 0 to 1000" },
+          "i4": { "label": "Goals & projects", "desc": "Save for your goals and track your building projects" }
         },
         "payments": {
-          "title": "Payments", "tagline": "Optimize your payments, accelerate growth",
-          "i1": { "label": "Simplified transfer", "desc": "Secure bank-transfer payment in a few clicks" },
-          "i2": { "label": "Goals & projects", "desc": "Save for your goals and track your building projects" }
+          "title": "Payments", "tagline": "Your Mobile Money payments, simplified",
+          "i1": { "label": "Simplified transfer", "desc": "Pay with Mobile Money, USSD code pre-filled" }
         },
         "data": {
           "title": "Data & API", "tagline": "Bring intelligence to your financial data",
@@ -95,10 +95,26 @@
       "eyebrow": "Payments",
       "title": "Your Mobile Money transfers, prepared in one tap",
       "sub": "Start an MTN MoMo or Orange Money payment from Dali: the app fills in the USSD code for you, ready to send. Dali never touches your money.",
+      "mockTitle": "Mobile Money transfer",
+      "mockMeta": "MTN MoMo · 5,000 FCFA",
+      "call": "Call",
+      "how": "How it works",
+      "howSub": "From amount to receipt, in four steps.",
+      "steps": {
+        "s1": "Pick the recipient and amount",
+        "s2": "Dali builds the exact USSD code",
+        "s3": "Confirm in your phone dialer",
+        "s4": "Dali categorizes it from the SMS"
+      },
+      "benefitsTitle": "Why it's simpler",
       "features": {
         "prepare": { "title": "The right code, pre-filled", "body": "Pick the recipient and amount: Dali prepares the exact USSD code (*126*1*…), with no typing errors." },
         "dialer": { "title": "One tap and you're set", "body": "Dali opens your phone dialer with the code already entered — just confirm with your operator PIN." },
         "track": { "title": "Automatic tracking", "body": "When the transaction comes back by SMS, Dali detects it and sorts it into the right category, with no manual entry." }
+      },
+      "trust": {
+        "title": "Your data stays with you",
+        "body": "Dali reads your transaction SMS locally, on your phone. Nothing leaves without your consent, and money only ever moves through your operator."
       },
       "cta": { "title": "Pay faster, error-free", "body": "Download Dali and prepare your MoMo and Orange Money transfers in seconds." }
     },
