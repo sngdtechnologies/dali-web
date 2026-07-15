@@ -4,15 +4,27 @@ import { Badge } from '@/components/ui/Badge';
 import { Reveal } from '@/components/motion/Reveal';
 import { StoreBadges } from './StoreBadges';
 import { PhoneFrame } from './solution/PhoneFrame';
+import { PanelDecor } from './solution/PanelDecor';
 import { SolutionCta } from './solution/SolutionCta';
 import { DaliScoreGauge } from './DaliScoreGauge';
 import { cn } from '@/lib/utils';
 
 function GradientPhone({ src, width = 220 }: { src: string; width?: number }) {
   return (
-    <div className="relative flex justify-center overflow-hidden rounded-dali-xl bg-gradient-to-br from-foret-600 via-foret-800 to-foret-900 p-8 sm:p-10">
-      <div className="pointer-events-none absolute -right-12 -top-10 h-44 w-44 rounded-full bg-or-500/25 blur-3xl" aria-hidden />
-      <PhoneFrame src={src} width={width} />
+    <div className="relative flex justify-center overflow-hidden rounded-dali-xl bg-gradient-to-br from-foret-600 via-foret-800 to-foret-900 p-8 sm:p-12">
+      <PanelDecor tone="dark" />
+      <div className="relative z-10">
+        <PhoneFrame src={src} width={width} />
+      </div>
+      <div className="pointer-events-none absolute right-3 top-10 z-20 hidden rounded-dali-md bg-white/95 p-2.5 shadow-lg backdrop-blur sm:block" aria-hidden>
+        <div className="flex items-center gap-1.5">
+          <span className="h-1.5 w-1.5 rounded-full bg-or-500" />
+          <span className="font-mono text-xs font-semibold tabular-nums text-serenite">+12 %</span>
+        </div>
+        <svg viewBox="0 0 60 20" className="mt-1 w-16" aria-hidden>
+          <path d="M0 16 C12 6 22 14 34 8 S52 2 60 6" fill="none" stroke="#3A6B4E" strokeWidth="2" strokeLinecap="round" />
+        </svg>
+      </div>
     </div>
   );
 }

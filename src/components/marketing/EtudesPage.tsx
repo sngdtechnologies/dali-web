@@ -5,6 +5,7 @@ import { Reveal } from '@/components/motion/Reveal';
 import { StoreBadges } from './StoreBadges';
 import { SolutionCta } from './solution/SolutionCta';
 import { FeatureCards } from './solution/FeatureCards';
+import { PanelDecor } from './solution/PanelDecor';
 
 const IP = { viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 1.7, strokeLinecap: 'round' as const, strokeLinejoin: 'round' as const, 'aria-hidden': true };
 
@@ -19,8 +20,8 @@ const BARS = [38, 62, 48, 80, 56, 72];
 function ReportCard({ t }: { t: Awaited<ReturnType<typeof getTranslations>> }) {
   return (
     <div className="relative flex justify-center overflow-hidden rounded-dali-xl bg-gradient-to-br from-foret-700 via-foret-800 to-foret-900 p-7 sm:p-10">
-      <div className="pointer-events-none absolute -right-12 -top-10 h-44 w-44 rounded-full bg-or-500/25 blur-3xl" aria-hidden />
-      <div className="relative w-full max-w-sm rounded-dali-lg bg-white p-6 shadow-2xl">
+      <PanelDecor tone="dark" />
+      <div className="relative z-10 w-full max-w-sm rounded-dali-lg bg-white p-6 shadow-2xl">
         <div className="flex items-center justify-between">
           <div className="text-sm font-semibold text-encre">{t('reportTitle')}</div>
           <span className="rounded-dali-full bg-foret-50 px-2.5 py-0.5 text-xs font-medium text-foret-700">{t('reportPeriod')}</span>
