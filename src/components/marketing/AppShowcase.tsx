@@ -27,6 +27,19 @@ function LabMark() {
   );
 }
 
+function TileDecor() {
+  return (
+    <>
+      <span className="pointer-events-none absolute -right-8 -top-8 h-28 w-28 rounded-full bg-white/50 blur-2xl" aria-hidden />
+      <span className="pointer-events-none absolute left-5 top-5 h-2 w-2 rounded-full bg-or-500/60" aria-hidden />
+      <svg viewBox="0 0 72 72" className="pointer-events-none absolute -bottom-5 -left-5 h-24 w-24 text-foret-900/[0.08]" aria-hidden>
+        <path d="M8 44 A28 28 0 0 1 44 8" fill="none" stroke="currentColor" strokeWidth="7" strokeLinecap="round" />
+        <path d="M28 64 A28 28 0 0 1 64 28" fill="none" stroke="currentColor" strokeWidth="7" strokeLinecap="round" />
+      </svg>
+    </>
+  );
+}
+
 export async function AppShowcase() {
   const t = await getTranslations('showcase');
   return (
@@ -52,8 +65,11 @@ export async function AppShowcase() {
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {CARDS.flatMap((c) => [
             <Reveal key={`${c.k}-img`}>
-              <Link href={c.href} aria-label={t(`cards.${c.k}.title`)} className={cn('flex h-full items-center justify-center overflow-hidden rounded-dali-lg p-6 sm:p-8', c.tint)}>
-                <PhoneFrame src={`/screens/${c.img}.webp`} width={150} />
+              <Link href={c.href} aria-label={t(`cards.${c.k}.title`)} className={cn('group relative flex h-full items-center justify-center overflow-hidden rounded-dali-lg p-6 sm:p-8', c.tint)}>
+                <TileDecor />
+                <div className="relative transition-transform duration-300 ease-out group-hover:-translate-y-1.5">
+                  <PhoneFrame src={`/screens/${c.img}.webp`} width={150} />
+                </div>
               </Link>
             </Reveal>,
             <Reveal key={`${c.k}-text`}>

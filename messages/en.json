@@ -367,6 +367,19 @@
     "confidentialite": { "title": "Privacy policy", "body": "Dali respects your privacy. This draft describes the data collected, its use, retention, and your rights. Your financial data is encrypted and you keep control of it. The final version will be legally reviewed." },
     "cookies": { "title": "Cookie policy", "body": "This site uses a minimum of cookies necessary for it to function. This draft describes the cookies used and how to manage them. The final version will be legally reviewed." }
   },
+  "comingSoon": {
+    "soon": "Soon",
+    "backHome": "Back to home",
+    "faq": "Browse the FAQ",
+    "contact": "Contact us",
+    "pages": {
+      "blog": { "title": "The Dali blog is coming soon", "body": "Tips to manage your money better, news and behind-the-scenes of Dali: our blog opens shortly." },
+      "help": { "title": "Help center", "body": "Our help center is coming soon. In the meantime, the FAQ already covers the essentials — or write to us and we'll reply." },
+      "careers": { "title": "Join those shaping the future of finance", "body": "We're building the future of finance in Africa. Openings are coming soon — write to us, we love meeting passionate people." },
+      "references": { "title": "They trust us", "body": "Our partners and references will be showcased here very soon." },
+      "events": { "title": "Events", "body": "Meetups, workshops and Dali get-togethers: our calendar is coming soon." }
+    }
+  },
   "footer": {
     "description": "Building Open Banking and Open Finance experiences. Dali brings all your accounts together and brings clarity to your money.",
     "colProduct": "Product",

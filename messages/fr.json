@@ -367,6 +367,19 @@
     "confidentialite": { "title": "Politique de confidentialité", "body": "Dali respecte votre vie privée. Ce texte provisoire décrit les données collectées, leur usage, leur conservation et vos droits. Vos données financières sont chiffrées et vous en gardez le contrôle. La version définitive sera validée juridiquement." },
     "cookies": { "title": "Politique de cookies", "body": "Ce site utilise un minimum de cookies nécessaires à son fonctionnement. Ce texte provisoire décrit les cookies utilisés et la manière de les gérer. La version définitive sera validée juridiquement." }
   },
+  "comingSoon": {
+    "soon": "Bientôt",
+    "backHome": "Retour à l'accueil",
+    "faq": "Consulter la FAQ",
+    "contact": "Nous contacter",
+    "pages": {
+      "blog": { "title": "Le blog Dali arrive bientôt", "body": "Conseils pour mieux gérer votre argent, actualités et coulisses de Dali : notre blog ouvre prochainement." },
+      "help": { "title": "Centre d'aide", "body": "Notre centre d'aide arrive bientôt. En attendant, la FAQ répond déjà à l'essentiel — ou écrivez-nous, on vous répond." },
+      "careers": { "title": "Rejoignez celles et ceux qui font bouger la finance", "body": "Nous construisons l'avenir de la finance en Afrique. Nos offres arrivent bientôt — écrivez-nous, on adore rencontrer les passionnés." },
+      "references": { "title": "Ils nous font confiance", "body": "Nos partenaires et références seront présentés ici très prochainement." },
+      "events": { "title": "Événements", "body": "Rencontres, ateliers et rendez-vous Dali : notre agenda arrive bientôt." }
+    }
+  },
   "footer": {
     "description": "Créateur d'expériences Open Banking et Open Finance. Dali réunit tous vos comptes et éclaire vos finances au quotidien.",
     "colProduct": "Produit",

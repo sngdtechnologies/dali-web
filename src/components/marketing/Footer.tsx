@@ -39,16 +39,16 @@ export function Footer() {
       title: t('colResources'),
       links: [
         { label: t('faq'), href: '/faq' },
-        { label: t('help'), href: '#' },
-        { label: t('blog'), href: '#' },
+        { label: t('help'), href: '/centre-aide' },
+        { label: t('blog'), href: '/blog' },
       ],
     },
     {
       title: t('colCompany'),
       links: [
         { label: t('about'), href: '/a-propos' },
-        { label: t('careers'), href: '#' },
-        { label: t('events'), href: '#' },
+        { label: t('careers'), href: '/carrieres' },
+        { label: t('events'), href: '/evenements' },
         { label: t('contact'), href: '/entreprises' },
       ],
     },

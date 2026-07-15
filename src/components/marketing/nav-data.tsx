@@ -93,17 +93,17 @@ export function getNavMenus(t: TFn): NavMenu[] {
       items: [
         item(m('resources.i1'), '/securite', icons.shield),
         item(m('resources.i2'), '/faq', icons.faq),
-        item(m('resources.i3'), '#', icons.blog),
-        item(m('resources.i4'), '#', icons.help),
+        item(m('resources.i3'), '/blog', icons.blog),
+        item(m('resources.i4'), '/centre-aide', icons.help),
       ],
     },
     {
       key: 'about', label: t('about'), layout: 'grid',
       items: [
         item(m('about.i1'), '/a-propos', icons.team),
-        item(m('about.i2'), '#', icons.star),
-        item(m('about.i3'), '#', icons.shield),
-        item(m('about.i4'), '#', icons.event),
+        item(m('about.i2'), '/carrieres', icons.star),
+        item(m('about.i3'), '/references', icons.shield),
+        item(m('about.i4'), '/evenements', icons.event),
       ],
       promo: { title: t(m('about.promo.title')), desc: t(m('about.promo.desc')), badge: t(m('about.promo.badge')), href: '/entreprises', image: '/menu/about.webp' },
     },
