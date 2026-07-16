@@ -98,6 +98,10 @@
       "mockTitle": "Virement Mobile Money",
       "mockMeta": "MTN MoMo · 5 000 FCFA",
       "call": "Appel",
+      "chips": {
+        "ready": "Prêt à envoyer",
+        "tracked": "Rangé automatiquement"
+      },
       "how": "Comment ça marche",
       "howSub": "Du montant au reçu, en quatre étapes.",
       "steps": {

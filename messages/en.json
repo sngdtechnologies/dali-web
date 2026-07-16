@@ -98,6 +98,10 @@
       "mockTitle": "Mobile Money transfer",
       "mockMeta": "MTN MoMo · 5,000 FCFA",
       "call": "Call",
+      "chips": {
+        "ready": "Ready to send",
+        "tracked": "Auto-categorised"
+      },
       "how": "How it works",
       "howSub": "From amount to receipt, in four steps.",
       "steps": {

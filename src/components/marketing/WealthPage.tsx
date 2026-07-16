@@ -25,9 +25,34 @@ function conic(): string {
   return `conic-gradient(${stops.join(', ')})`;
 }
 
+function WealthChips({ realestateLabel }: { realestateLabel: string }) {
+  return (
+    <>
+      <div className="absolute -left-3 -top-3 z-20 hidden items-center gap-2 rounded-dali-md bg-white px-3 py-2 shadow-xl ring-1 ring-encre/5 sm:flex" aria-hidden>
+        <span className="flex h-7 w-7 items-center justify-center rounded-full" style={{ backgroundColor: '#1F3A2E1A', color: '#1F3A2E' }}>
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M3 11 12 4l9 7M5 10v10h14V10M9 20v-6h6v6" /></svg>
+        </span>
+        <div className="leading-tight">
+          <div className="text-[10px] font-medium uppercase tracking-wide text-sable-500">{realestateLabel}</div>
+          <div className="font-mono text-sm font-semibold tabular-nums text-encre">45 %</div>
+        </div>
+      </div>
+      <div className="absolute -bottom-3 -right-3 z-20 hidden rounded-dali-md bg-white px-3 py-2 shadow-xl ring-1 ring-encre/5 sm:block" aria-hidden>
+        <div className="flex items-center gap-1.5">
+          <span className="h-1.5 w-1.5 rounded-full bg-serenite" />
+          <span className="font-mono text-xs font-semibold tabular-nums text-serenite">+1,5 %</span>
+        </div>
+        <svg viewBox="0 0 60 20" className="mt-1 w-16" aria-hidden>
+          <path d="M0 17 C12 12 20 8 32 9 S50 3 60 4" fill="none" stroke="#3A6B4E" strokeWidth="2" strokeLinecap="round" />
+        </svg>
+      </div>
+    </>
+  );
+}
+
 function Dashboard({ t }: { t: Awaited<ReturnType<typeof getTranslations>> }) {
   return (
-    <FloatingMock>
+    <FloatingMock overlay={<WealthChips realestateLabel={t('classes.realestate.label')} />}>
       <div className="w-full rounded-dali-lg border border-encre/10 bg-white p-6 shadow-xl">
         <div className="flex items-start justify-between">
           <div>

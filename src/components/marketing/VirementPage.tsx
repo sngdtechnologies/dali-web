@@ -13,10 +13,36 @@ const BENEFIT_ICONS: Record<string, React.ReactNode> = {
   track: <svg {...IP} width="22" height="22"><path d="M21 12a9 9 0 1 1-3-6.7M21 4v4h-4" /><path d="m9 12 2 2 4-4" /></svg>,
 };
 
-function PhoneMock({ title, meta, callLabel }: { title: string; meta: string; callLabel: string }) {
+function VirementChips({ ready, tracked }: { ready: string; tracked: string }) {
+  return (
+    <>
+      <div className="absolute left-0 top-10 z-20 hidden items-center gap-2 rounded-dali-md bg-white px-3 py-2 shadow-xl ring-1 ring-encre/5 sm:flex" aria-hidden>
+        <span className="flex h-6 w-6 items-center justify-center rounded-full bg-or-500/15">
+          <span className="h-2 w-2 rounded-full bg-or-500" />
+        </span>
+        <div className="leading-tight">
+          <div className="text-[10px] font-medium uppercase tracking-wide text-sable-500">MTN MoMo</div>
+          <div className="font-mono text-sm font-semibold tabular-nums text-encre">5 000 FCFA</div>
+        </div>
+      </div>
+      <div className="absolute -right-1 top-24 z-20 hidden items-center gap-2 rounded-dali-md bg-white px-3 py-2 shadow-xl ring-1 ring-encre/5 sm:flex" aria-hidden>
+        <span className="flex h-6 w-6 items-center justify-center rounded-full bg-serenite text-white">
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#fff" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="m5 12 5 5 9-11" /></svg>
+        </span>
+        <span className="text-xs font-medium text-encre">{ready}</span>
+      </div>
+      <div className="absolute -bottom-1 left-2 z-20 hidden items-center gap-2 rounded-dali-md bg-foret-800 px-3 py-2 shadow-xl sm:flex" aria-hidden>
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#F2EDE4" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M4 7h11l-2-2M20 17H9l2 2" /></svg>
+        <span className="text-xs font-medium text-ivoire">{tracked}</span>
+      </div>
+    </>
+  );
+}
+
+function PhoneMock({ title, meta, callLabel, ready, tracked }: { title: string; meta: string; callLabel: string; ready: string; tracked: string }) {
   const keys = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '*', '0', '#'];
   return (
-    <FloatingMock>
+    <FloatingMock overlay={<VirementChips ready={ready} tracked={tracked} />}>
       <div className="w-[236px] rounded-[40px] bg-encre p-2.5 shadow-2xl ring-1 ring-black/10">
         <div className="overflow-hidden rounded-[32px] bg-white">
           <div className="mx-auto mt-2.5 h-1.5 w-14 rounded-full bg-encre/15" aria-hidden />
@@ -62,7 +88,7 @@ export async function VirementPage() {
               <div className="mt-8"><StoreBadges /></div>
             </Reveal>
             <Reveal delay={0.1}>
-              <PhoneMock title={t('mockTitle')} meta={t('mockMeta')} callLabel={t('call')} />
+              <PhoneMock title={t('mockTitle')} meta={t('mockMeta')} callLabel={t('call')} ready={t('chips.ready')} tracked={t('chips.tracked')} />
             </Reveal>
           </div>
         </Container>
