@@ -127,6 +127,7 @@
       "title": "Vos objectifs d'épargne et vos chantiers",
       "sub": "Mettez de l'argent de côté pour ce qui compte — scolarité, remboursement, voyage — et suivez l'avancement de vos chantiers, de la première pierre au dernier versement.",
       "mock": { "type": "Chantier", "name": "Maison familiale", "builtLabel": "Bâti à", "savedLabel": "Épargné", "monthly": "500 000 FCFA / mois", "etaLabel": "Aboutissement", "eta": "mars 2027" },
+      "chips": { "onTrack": "Dans les temps", "monthly": "+500 000 FCFA / mois" },
       "typesTitle": "Pour tous vos projets",
       "typesSub": "Fixez un objectif, choisissez son type, et laissez Dali rythmer votre épargne.",
       "types": {
@@ -149,6 +150,7 @@
       "title": "Tous vos comptes, une seule vue",
       "sub": "Réunissez vos sources MTN MoMo, Orange Money et vos comptes bancaires dans une vue unique et synchronisée. Bientôt disponible dans Dali.",
       "totalLabel": "Solde global",
+      "chips": { "synced": "À jour", "sources": "3 sources" },
       "sourcesTitle": "Toutes vos sources, une seule vue",
       "sourcesSub": "MoMo, Orange Money, banque : Dali réunit vos soldes en un total clair, tenu à jour tout seul.",
       "benefitsTitle": "Ce qui vous attend",

@@ -13,9 +13,28 @@ const SOURCES = [
   { name: 'Afriland First Bank', value: '240 000 FCFA', hex: '#2D4F3F' },
 ];
 
+function AggregationChips({ synced, sources }: { synced: string; sources: string }) {
+  return (
+    <>
+      <div className="absolute -left-3 -top-3 z-20 hidden items-center gap-2 rounded-dali-md bg-white px-3 py-2 shadow-xl ring-1 ring-encre/5 sm:flex" aria-hidden>
+        <span className="flex h-7 w-7 items-center justify-center rounded-full bg-foret-50 text-foret-700">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M3 7h18M3 12h18M3 17h18" /></svg>
+        </span>
+        <span className="text-sm font-semibold text-encre">{sources}</span>
+      </div>
+      <div className="absolute -bottom-3 -right-3 z-20 hidden items-center gap-2 rounded-dali-md bg-white px-3 py-2 shadow-xl ring-1 ring-encre/5 sm:flex" aria-hidden>
+        <span className="flex h-6 w-6 items-center justify-center rounded-full bg-serenite/15 text-serenite">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7M21 4v4h-4" /></svg>
+        </span>
+        <span className="text-xs font-medium text-encre">{synced}</span>
+      </div>
+    </>
+  );
+}
+
 function SourcesCard({ t }: { t: Awaited<ReturnType<typeof getTranslations>> }) {
   return (
-    <FloatingMock>
+    <FloatingMock overlay={<AggregationChips synced={t('chips.synced')} sources={t('chips.sources')} />}>
       <div className="w-full rounded-dali-lg border border-encre/10 bg-white p-6 shadow-xl">
         <div className="text-xs uppercase tracking-wide text-sable-700">{t('totalLabel')}</div>
         <div className="mt-1 font-serif text-3xl font-medium tabular-nums text-encre">1 245 000 FCFA</div>

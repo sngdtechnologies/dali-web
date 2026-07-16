@@ -16,9 +16,28 @@ const TYPES: { k: string; icon: React.ReactNode }[] = [
   { k: 'repay', icon: <svg {...IP} width="22" height="22"><circle cx="8" cy="12" r="5" /><path d="M13 8a5 5 0 0 1 0 8M6.5 12h3M8 10.5v3" /></svg> },
 ];
 
+function GoalChips({ monthly, onTrack }: { monthly: string; onTrack: string }) {
+  return (
+    <>
+      <div className="absolute -left-3 -top-3 z-20 hidden items-center gap-2 rounded-dali-md bg-white px-3 py-2 shadow-xl ring-1 ring-encre/5 sm:flex" aria-hidden>
+        <span className="flex h-7 w-7 items-center justify-center rounded-full bg-or-500/15 text-or-700">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="5" width="18" height="16" rx="2" /><path d="M3 9h18M8 3v4M16 3v4" /></svg>
+        </span>
+        <span className="font-mono text-xs font-semibold tabular-nums text-encre">{monthly}</span>
+      </div>
+      <div className="absolute -bottom-3 -right-3 z-20 hidden items-center gap-2 rounded-dali-md bg-white px-3 py-2 shadow-xl ring-1 ring-encre/5 sm:flex" aria-hidden>
+        <span className="flex h-6 w-6 items-center justify-center rounded-full bg-serenite text-white">
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#fff" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+        </span>
+        <span className="text-xs font-medium text-encre">{onTrack}</span>
+      </div>
+    </>
+  );
+}
+
 function GoalCard({ t }: { t: Awaited<ReturnType<typeof getTranslations>> }) {
   return (
-    <FloatingMock>
+    <FloatingMock overlay={<GoalChips monthly={t('chips.monthly')} onTrack={t('chips.onTrack')} />}>
       <div className="w-full rounded-dali-lg border border-encre/10 bg-white p-6 shadow-xl">
         <div className="flex items-start justify-between">
           <div>

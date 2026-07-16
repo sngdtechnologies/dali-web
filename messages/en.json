@@ -127,6 +127,7 @@
       "title": "Your savings goals and building projects",
       "sub": "Set money aside for what matters — school fees, loan repayment, travel — and track your building projects from the first stone to the last contribution.",
       "mock": { "type": "Building project", "name": "Family home", "builtLabel": "Built at", "savedLabel": "Saved", "monthly": "500,000 FCFA / month", "etaLabel": "Completion", "eta": "March 2027" },
+      "chips": { "onTrack": "On track", "monthly": "+500,000 FCFA / month" },
       "typesTitle": "For every project",
       "typesSub": "Set a goal, pick its type, and let Dali pace your saving.",
       "types": {
@@ -149,6 +150,7 @@
       "title": "Every account, one view",
       "sub": "Bring your MTN MoMo, Orange Money and bank accounts together into a single, synchronized view. Coming soon to Dali.",
       "totalLabel": "Total balance",
+      "chips": { "synced": "Up to date", "sources": "3 sources" },
       "sourcesTitle": "Every source, one view",
       "sourcesSub": "MoMo, Orange Money, bank: Dali brings your balances into one clear total, kept up to date on its own.",
       "benefitsTitle": "What's coming",
