@@ -12,14 +12,17 @@ const base =
   'inline-flex items-center justify-center gap-2 rounded-dali-full px-6 py-3 text-sm font-medium transition-transform duration-150 active:scale-[0.97]';
 
 export function Button({
-  variant = 'primary', href, className, children,
+  variant = 'primary', href, className, children, type = 'button', disabled, onClick,
 }: {
   variant?: Variant;
   href?: string;
   className?: string;
   children: React.ReactNode;
+  type?: 'button' | 'submit';
+  disabled?: boolean;
+  onClick?: () => void;
 }) {
-  const classes = cn(base, variantClass[variant], className);
+  const classes = cn(base, variantClass[variant], disabled && 'opacity-60', className);
   if (href && /^https?:\/\//.test(href)) {
     return <a href={href} className={classes} target="_blank" rel="noreferrer">{children}</a>;
   }
@@ -29,5 +32,9 @@ export function Button({
   if (href) {
     return <Link href={href} className={classes}>{children}</Link>;
   }
-  return <button type="button" className={classes}>{children}</button>;
+  return (
+    <button type={type} className={classes} disabled={disabled} onClick={onClick}>
+      {children}
+    </button>
+  );
 }

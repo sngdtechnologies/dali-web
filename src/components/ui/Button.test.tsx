@@ -12,4 +12,15 @@ describe('Button', () => {
     const link = screen.getByRole('link', { name: 'Store' });
     expect(link).toHaveAttribute('href', 'https://apps.apple.com/app/dali');
   });
+  it('renders type=button by default and accepts type=submit', () => {
+    const { rerender } = render(<Button>Go</Button>);
+    expect(screen.getByRole('button', { name: 'Go' })).toHaveAttribute('type', 'button');
+    rerender(<Button type="submit">Go</Button>);
+    expect(screen.getByRole('button', { name: 'Go' })).toHaveAttribute('type', 'submit');
+  });
+
+  it('can be disabled', () => {
+    render(<Button disabled>Go</Button>);
+    expect(screen.getByRole('button', { name: 'Go' })).toBeDisabled();
+  });
 });
