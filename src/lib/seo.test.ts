@@ -4,7 +4,7 @@ import { buildMetadata } from './seo';
 describe('buildMetadata', () => {
   it('sets title, canonical and hreflang alternates', () => {
     const m = buildMetadata({ locale: 'fr', path: '/faq', title: 'FAQ', description: 'd' });
-    expect(m.title).toBe('FAQ');
+    expect(m.title).toEqual({ absolute: 'FAQ' });
     expect(m.alternates?.canonical).toBe('/fr/faq');
     expect(m.alternates?.languages).toEqual({ fr: '/fr/faq', en: '/en/faq' });
   });
