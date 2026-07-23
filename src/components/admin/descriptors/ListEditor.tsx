@@ -1,6 +1,6 @@
 'use client';
 
-import type { ListDescriptorValue, CardItem, Fab } from '@/lib/admin/descriptor-types';
+import type { ListDescriptorValue, CardItem } from '@/lib/admin/descriptor-types';
 import { ArrayField } from './ArrayField';
 import { fieldInputClass } from './styles';
 
