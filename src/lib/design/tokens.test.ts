@@ -8,6 +8,8 @@ describe('dali tokens', () => {
     expect(daliColors.foret[900]).toBe('#102018');
     expect(daliColors.or[500]).toBe('#C9A961');
     expect(daliColors.encre).toBe('#1A1A17');
+    expect(daliColors.terre[600]).toBe('#9C4D38');
+    expect(daliColors.terre[700]).toBe('#7A3D2E');
   });
   it('exposes radius and motion tokens', () => {
     expect(daliRadius.lg).toBe('20px');

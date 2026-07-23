@@ -11,7 +11,7 @@ const config: Config = {
         foret: daliColors.foret,
         or: daliColors.or,
         corail: daliColors.corail,
-        terre: daliColors.terre,
+        terre: { DEFAULT: daliColors.terre[600], ...daliColors.terre },
         sable: daliColors.sable,
         serenite: daliColors.serenite,
         attention: daliColors.attention,
