@@ -1,5 +1,6 @@
 import { apiFetch, ApiError } from '@/lib/api/client';
 import { requireAdminToken, redirectExpired } from '@/lib/auth/session';
+import type { ScreenDescriptorValue } from '@/lib/admin/descriptor-types';
 
 export interface AdminStats {
   total: number;
@@ -53,4 +54,18 @@ export function fetchUsers(params: { search?: string; cursor?: string } = {}): P
 
 export function fetchUser(id: string): Promise<AdminUserDetail> {
   return get<AdminUserDetail>(`/admin/users/${encodeURIComponent(id)}`);
+}
+
+export interface AdminDescriptorListItem {
+  key: string; locale: string; type: string; title: string; version: number; updatedAt: string;
+}
+export interface AdminDescriptorDetail {
+  key: string; locale: string; version: number; json: ScreenDescriptorValue; updatedAt: string;
+}
+
+export function fetchDescriptors(): Promise<AdminDescriptorListItem[]> {
+  return get<AdminDescriptorListItem[]>('/admin/descriptors');
+}
+export function fetchDescriptor(key: string, locale: string): Promise<AdminDescriptorDetail> {
+  return get<AdminDescriptorDetail>(`/admin/descriptors/${encodeURIComponent(key)}/${encodeURIComponent(locale)}`);
 }
