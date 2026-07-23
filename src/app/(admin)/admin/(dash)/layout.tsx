@@ -5,6 +5,7 @@ import { LogoutButton } from '@/components/admin/LogoutButton';
 const NAV = [
   { href: '/admin', label: 'Dashboard' },
   { href: '/admin/users', label: 'Utilisateurs' },
+  { href: '/admin/descriptors', label: 'Descripteurs' },
 ];
 
 export default async function DashLayout({ children }: { children: React.ReactNode }) {
