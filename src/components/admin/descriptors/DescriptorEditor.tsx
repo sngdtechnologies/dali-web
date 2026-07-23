@@ -8,6 +8,7 @@ import { DetailEditor } from './DetailEditor';
 import { FormEditor } from './FormEditor';
 import { WizardEditor } from './WizardEditor';
 import { BlocksEditor } from './BlocksEditor';
+import { DescriptorPreview } from './DescriptorPreview';
 
 export function DescriptorEditor({ initial }: { initial: AdminDescriptorDetail }) {
   const [value, setValue] = useState<ScreenDescriptorValue>(initial.json);
@@ -55,6 +56,7 @@ export function DescriptorEditor({ initial }: { initial: AdminDescriptorDetail }
   }
 
   return (
+    <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
     <div className="flex flex-col gap-6">
       <div className="flex items-center justify-between">
         <span className="text-sm text-sable-700">Version {version}</span>
@@ -83,6 +85,8 @@ export function DescriptorEditor({ initial }: { initial: AdminDescriptorDetail }
       {value.type === 'form' ? <FormEditor value={value} onChange={(f) => setValue({ ...f, type: 'form' })} /> : null}
       {value.type === 'wizard' ? <WizardEditor value={value} onChange={setValue} /> : null}
       {value.type === 'blocks' ? <BlocksEditor value={value} onChange={setValue} /> : null}
+    </div>
+    <DescriptorPreview value={value} />
     </div>
   );
 }

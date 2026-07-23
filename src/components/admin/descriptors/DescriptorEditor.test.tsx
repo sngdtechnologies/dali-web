@@ -63,4 +63,10 @@ describe('DescriptorEditor', () => {
     await userEvent.click(screen.getByRole('button', { name: 'Enregistrer' }));
     expect(await screen.findByRole('alert')).toHaveTextContent('Service indisponible, réessayez.');
   });
+
+  it('renders a live preview alongside the editor, reflecting the initial value', () => {
+    render(<DescriptorEditor initial={initial} />);
+    // The title appears twice: once in the editable input, once in the preview heading.
+    expect(screen.getAllByText('Fiscalité').length + screen.getAllByDisplayValue('Fiscalité').length).toBeGreaterThanOrEqual(2);
+  });
 });
